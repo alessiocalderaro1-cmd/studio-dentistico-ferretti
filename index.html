@@ -1,399 +1,648 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Studio Dentistico Ferretti — Brescia</title>
-  <meta name="description" content="Studio dentistico a Brescia. Cure odontoiatriche per tutta la famiglia, implantologia, ortodonzia e sbiancamento. Prenota online.">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Studio Dentistico Ferretti — Cure dentali d'eccellenza a Brescia. Implantologia, ortodonzia, sbiancamento. Prima visita gratuita." />
+  <title>Studio Dentistico Ferretti | Brescia</title>
 
-  <!-- Self-hosted font via Bunny Fonts (no GDPR issues) -->
-  <link rel="preconnect" href="https://fonts.bunny.net">
-  <link href="https://fonts.bunny.net/css?family=fraunces:400,600,700|inter:400,500,600" rel="stylesheet">
-
-  <link rel="stylesheet" href="style.css">
-
-  <!-- Schema.org LocalBusiness + Dentist -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "Dentist",
     "name": "Studio Dentistico Ferretti",
-    "description": "Studio dentistico a Brescia specializzato in implantologia, ortodonzia e cure conservative per tutta la famiglia.",
-    "url": "https://studiodenttisticoferretti.it",
+    "url": "https://studio-dentistico-ferretti.pages.dev",
     "telephone": "+39 030 123 4567",
-    "email": "info@studiodenttisticoferretti.it",
     "address": {
       "@type": "PostalAddress",
-      "streetAddress": "Via Triumplina 45",
+      "streetAddress": "Via Trieste 42",
       "addressLocality": "Brescia",
-      "postalCode": "25136",
-      "addressRegion": "BS",
+      "postalCode": "25121",
       "addressCountry": "IT"
     },
-    "geo": {
-      "@type": "GeoCoordinates",
-      "latitude": 45.5416,
-      "longitude": 10.2118
-    },
-    "openingHoursSpecification": [
-      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "09:00", "closes": "19:00" },
-      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "09:00", "closes": "13:00" }
-    ],
-    "aggregateRating": {
-      "@type": "AggregateRating",
-      "ratingValue": "4.9",
-      "reviewCount": "127",
-      "bestRating": "5"
-    },
-    "medicalSpecialty": ["Dentistry", "Orthodontics", "Implantology"],
-    "priceRange": "€€"
+    "geo": { "@type": "GeoCoordinates", "latitude": 45.5416, "longitude": 10.2118 },
+    "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.9", "reviewCount": "127", "bestRating": "5" },
+    "openingHours": ["Mo-Fr 08:30-19:30", "Sa 09:00-13:00"],
+    "medicalSpecialty": ["Implantology", "Orthodontics", "Endodontics", "Prosthodontics"]
   }
   </script>
+
+  <link rel="preconnect" href="https://fonts.bunny.net" />
+  <link href="https://fonts.bunny.net/css?family=inter:400,500,600,700&family=fraunces:ital,wght@0,400;0,600;0,700;1,400;1,600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <!-- SKIP LINK accessibilità -->
-  <a class="skip-link" href="#main">Vai al contenuto principale</a>
+<!-- DEMO BADGE -->
+<div class="demo-badge" role="alert">
+  ⚠️ Sito dimostrativo — brand fittizio a scopo portfolio
+  &nbsp;·&nbsp;
+  <a href="mailto:alessiocalderaro1@gmail.com">Contatta il webmaster</a>
+</div>
 
-  <!-- DEMO BADGE — rimuovere su sito cliente reale -->
-  <div style="background:#1E3A8A;color:#fff;text-align:center;padding:8px;font-size:13px;font-family:sans-serif;">
-    ⚠️ Sito dimostrativo — brand fittizio creato a scopo portfolio
-  </div>
+<!-- ══════════════════════════════════════
+     HEADER
+══════════════════════════════════════ -->
+<header class="site-header" id="site-header">
+  <div class="container header-inner">
 
-  <!-- HEADER -->
-  <header class="header" id="header">
-    <div class="container header__inner">
-      <a href="/" class="logo" aria-label="Studio Dentistico Ferretti — Homepage">
-        <span class="logo__icon" aria-hidden="true">✦</span>
-        <span class="logo__text">Studio Dentistico <strong>Ferretti</strong></span>
+    <a href="#" class="logo" aria-label="Studio Dentistico Ferretti — torna in cima">
+      <svg width="34" height="34" viewBox="0 0 34 34" fill="none" aria-hidden="true">
+        <rect width="34" height="34" rx="9" fill="#1D6FA4"/>
+        <path d="M11 9c-2.2 0-4.2 2-4.2 5.2 0 3 1.1 5.2 4.2 8.3.9 1 2 2.1 2 3.2 0 1 .8 2 1.8 2s1.8-1 1.8-2l.4-2c.5 1.1 1 2 1.8 2s1.8-1 1.8-2v-1.5c1-1 3.2-4.3 3.2-8s-2-5.2-4.2-5.2c-1.5 0-3 1-3 1S12.6 9 11 9z" fill="white"/>
+      </svg>
+      <span class="logo-text">Ferretti<span class="logo-accent">Dental</span></span>
+    </a>
+
+    <nav class="main-nav" id="main-nav" aria-label="Navigazione principale">
+      <ul>
+        <li><a href="#servizi">Servizi</a></li>
+        <li><a href="#chi-siamo">Chi siamo</a></li>
+        <li><a href="#recensioni">Recensioni</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#contatti">Contatti</a></li>
+      </ul>
+    </nav>
+
+    <div class="header-actions">
+      <a href="tel:+390301234567" class="phone-link" aria-label="Chiama lo studio">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.63A2 2 0 012 .9h3a2 2 0 012 1.72c.13.96.36 1.9.7 2.81a2 2 0 01-.45 2.11L6.91 8.58a16 16 0 006.5 6.5l1.04-1.04a2 2 0 012.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0122 16.92z"/></svg>
+        030 123 4567
       </a>
-      <nav class="nav" aria-label="Navigazione principale">
-        <ul class="nav__list">
-          <li><a href="#servizi" class="nav__link">Servizi</a></li>
-          <li><a href="#chi-siamo" class="nav__link">Chi siamo</a></li>
-          <li><a href="#recensioni" class="nav__link">Recensioni</a></li>
-          <li><a href="#faq" class="nav__link">FAQ</a></li>
-        </ul>
-      </nav>
-      <a href="#prenota" class="btn btn--primary btn--sm header__cta">Prenota visita</a>
+      <a href="#prenotazione" class="btn btn-primary btn-sm">Prenota ora</a>
     </div>
-  </header>
 
-  <main id="main">
+    <button class="hamburger" id="hamburger" aria-expanded="false" aria-controls="main-nav" aria-label="Apri menu di navigazione">
+      <span></span><span></span><span></span>
+    </button>
 
-    <!-- HERO -->
-    <section class="hero">
-      <div class="container hero__inner">
-        <div class="hero__content">
-          <div class="hero__badge">
-            <span>⭐ 4,9/5 su Google · 127 recensioni</span>
-          </div>
-          <h1 class="hero__title">
-            Il sorriso che hai sempre<br>
-            <em>voluto avere</em>
-          </h1>
-          <p class="hero__sub">
-            Studio dentistico a Brescia dal 1998. Cure conservative, implantologia e ortodonzia per tutta la famiglia — in un ambiente moderno e senza ansia.
-          </p>
-          <div class="hero__ctas">
-            <a href="#prenota" class="btn btn--primary btn--lg">Prenota una visita</a>
-            <a href="tel:+390301234567" class="btn btn--ghost btn--lg">
-              <span aria-hidden="true">📞</span> 030 123 4567
-            </a>
-          </div>
-          <div class="hero__trust">
-            <span class="trust-pill">✔ Convenzionato SSN</span>
-            <span class="trust-pill">✔ Iscritto Albo FNOMCEO</span>
-            <span class="trust-pill">✔ Prima visita gratuita</span>
-          </div>
-        </div>
-        <div class="hero__image-wrap" aria-hidden="true">
-          <div class="hero__image-placeholder">
-            <span>Foto studio / Dr. Ferretti</span>
-          </div>
-        </div>
+  </div>
+</header>
+<div class="nav-overlay" id="nav-overlay" aria-hidden="true"></div>
+
+<!-- ══════════════════════════════════════
+     HERO
+══════════════════════════════════════ -->
+<main id="main-content">
+<section class="hero" aria-labelledby="hero-heading">
+  <div class="container hero-inner">
+
+    <div class="hero-content" data-animate="fade-up">
+      <div class="hero-badge">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="#FBBF24" aria-hidden="true"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 17l-6.2 4.3 2.4-7.4L2 9.4h7.6z"/></svg>
+        Valutato 4.9 su 5 · 127 pazienti verificati
       </div>
-    </section>
 
-    <!-- TRUST BAR -->
-    <section class="trust-bar" aria-label="Numeri dello studio">
-      <div class="container trust-bar__grid">
-        <div class="trust-bar__item">
-          <strong>+2.400</strong>
-          <span>pazienti seguiti</span>
-        </div>
-        <div class="trust-bar__item">
-          <strong>26 anni</strong>
-          <span>di esperienza</span>
-        </div>
-        <div class="trust-bar__item">
-          <strong>4,9 ★</strong>
-          <span>su Google Maps</span>
-        </div>
-        <div class="trust-bar__item">
-          <strong>3 dentisti</strong>
-          <span>specializzati</span>
-        </div>
+      <h1 id="hero-heading" class="hero-heading">
+        Il sorriso<br/>che hai<br/><em>sempre voluto</em>
+      </h1>
+
+      <p class="hero-sub">
+        A Brescia dal 1998. Cure dentali d'eccellenza in un ambiente moderno, con tecnologie di ultima generazione e un team che mette il paziente al centro.
+      </p>
+
+      <div class="hero-cta">
+        <a href="#prenotazione" class="btn btn-primary btn-lg">
+          Prima visita gratuita
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+        <a href="#servizi" class="btn btn-ghost btn-lg">Scopri i trattamenti</a>
       </div>
-    </section>
 
-    <!-- SERVIZI -->
-    <section class="servizi" id="servizi">
-      <div class="container">
-        <div class="section-header">
-          <h2>I nostri servizi</h2>
-          <p>Tutto quello che serve alla salute del tuo sorriso, in un unico posto.</p>
-        </div>
-        <div class="servizi__grid">
-
-          <article class="servizio-card">
-            <div class="servizio-card__icon" aria-hidden="true">🦷</div>
-            <h3>Cure conservative</h3>
-            <p>Otturazioni, devitalizzazioni e trattamenti canalari con strumentazione digitale di ultima generazione.</p>
-            <a href="#prenota" class="link-arrow">Prenota →</a>
-          </article>
-
-          <article class="servizio-card">
-            <div class="servizio-card__icon" aria-hidden="true">🔩</div>
-            <h3>Implantologia</h3>
-            <p>Impianti in titanio a carico immediato. Recupera la funzionalità e l'estetica in tempi brevi.</p>
-            <a href="#prenota" class="link-arrow">Prenota →</a>
-          </article>
-
-          <article class="servizio-card">
-            <div class="servizio-card__icon" aria-hidden="true">😁</div>
-            <h3>Ortodonzia</h3>
-            <p>Apparecchi fissi, rimovibili e allineatori trasparenti (Invisalign) per adulti e bambini.</p>
-            <a href="#prenota" class="link-arrow">Prenota →</a>
-          </article>
-
-          <article class="servizio-card">
-            <div class="servizio-card__icon" aria-hidden="true">✨</div>
-            <h3>Sbiancamento</h3>
-            <p>Trattamento professionale in studio o kit domiciliare. Risultati visibili già dalla prima seduta.</p>
-            <a href="#prenota" class="link-arrow">Prenota →</a>
-          </article>
-
-          <article class="servizio-card">
-            <div class="servizio-card__icon" aria-hidden="true">🧒</div>
-            <h3>Odontoiatria pediatrica</h3>
-            <p>Visite e trattamenti pensati per i più piccoli, in un ambiente accogliente e senza paura.</p>
-            <a href="#prenota" class="link-arrow">Prenota →</a>
-          </article>
-
-          <article class="servizio-card">
-            <div class="servizio-card__icon" aria-hidden="true">🩺</div>
-            <h3>Igiene e prevenzione</h3>
-            <p>Igienizzazione professionale, sbiancamento, ablazione del tartaro e piano di prevenzione annuale.</p>
-            <a href="#prenota" class="link-arrow">Prenota →</a>
-          </article>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- CHI SIAMO -->
-    <section class="chi-siamo" id="chi-siamo">
-      <div class="container chi-siamo__inner">
-        <div class="chi-siamo__image-wrap" aria-hidden="true">
-          <div class="chi-siamo__image-placeholder">
-            Foto Dr. Ferretti / team
-          </div>
-        </div>
-        <div class="chi-siamo__content">
-          <span class="eyebrow">Il tuo dentista di fiducia</span>
-          <h2>Dr. Marco Ferretti</h2>
-          <p class="chi-siamo__credentials">
-            <strong>Specializzazione in Implantologia · Università degli Studi di Brescia</strong>
-          </p>
-          <p>
-            Laureato in Odontoiatria e Protesi Dentaria presso l'Università di Brescia, il Dr. Ferretti ha fondato lo studio nel 1998 con un obiettivo chiaro: offrire cure di alto livello in un ambiente dove il paziente si senta a proprio agio.
-          </p>
-          <p>
-            Iscritto all'Ordine dei Medici e Odontoiatri di Brescia (FNOMCEO), aggiorna costantemente le proprie competenze con corsi ECM certificati.
-          </p>
-          <div class="chi-siamo__badges">
-            <div class="badge">
-              <strong>Iscrizione Albo</strong>
-              <span>OMCeO Brescia n. 4821</span>
-            </div>
-            <div class="badge">
-              <strong>Convenzionato</strong>
-              <span>Servizio Sanitario Nazionale</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- RECENSIONI -->
-    <section class="recensioni" id="recensioni">
-      <div class="container">
-        <div class="section-header">
-          <h2>Cosa dicono i pazienti</h2>
-          <p>127 recensioni su Google · Media 4,9 su 5</p>
-        </div>
-        <div class="recensioni__grid">
-
-          <blockquote class="recensione-card">
-            <div class="recensione-card__stars" aria-label="5 stelle su 5">★★★★★</div>
-            <p>"Finalmente uno studio dove non ho più paura dal dentista. Il Dr. Ferretti è preciso, professionale e mette a proprio agio fin dal primo momento. Lo consiglio a tutti."</p>
-            <footer>
-              <strong>Giulia M.</strong>
-              <span>· Brescia · verificata su Google</span>
-            </footer>
-          </blockquote>
-
-          <blockquote class="recensione-card">
-            <div class="recensione-card__stars" aria-label="5 stelle su 5">★★★★★</div>
-            <p>"Ho fatto un impianto qui dopo anni di indecisione. Risultato perfetto, tempi rispettati e personale gentilissimo. Vale ogni centesimo."</p>
-            <footer>
-              <strong>Roberto C.</strong>
-              <span>· Brescia · verificata su Google</span>
-            </footer>
-          </blockquote>
-
-          <blockquote class="recensione-card">
-            <div class="recensione-card__stars" aria-label="5 stelle su 5">★★★★★</div>
-            <p>"Porto i miei figli qui da 4 anni. Sono bravissimi con i bambini — mio figlio di 7 anni non ha più paura di venire dal dentista. Studio moderno e sempre puntuale."</p>
-            <footer>
-              <strong>Sara B.</strong>
-              <span>· Concesio · verificata su Google</span>
-            </footer>
-          </blockquote>
-
-        </div>
-        <div class="recensioni__cta">
-          <a href="https://maps.google.com" target="_blank" rel="noopener" class="btn btn--outline">
-            Leggi tutte le recensioni su Google
-          </a>
-        </div>
-      </div>
-    </section>
-
-    <!-- PRENOTA -->
-    <section class="prenota" id="prenota">
-      <div class="container prenota__inner">
-        <div class="prenota__content">
-          <span class="eyebrow">Prima visita gratuita</span>
-          <h2>Prenota la tua visita</h2>
-          <p>Compila il modulo e ti ricontattiamo entro pochi minuti negli orari di apertura.</p>
-          <ul class="prenota__info">
-            <li>📍 Via Triumplina 45, Brescia</li>
-            <li>📞 030 123 4567</li>
-            <li>🕐 Lun–Ven 9:00–19:00 · Sab 9:00–13:00</li>
-          </ul>
-        </div>
-        <form class="prenota__form" action="#" method="POST" novalidate>
-          <div class="form-field">
-            <label for="nome">Nome e cognome <span aria-hidden="true">*</span></label>
-            <input type="text" id="nome" name="nome" required autocomplete="name" placeholder="Mario Rossi">
-          </div>
-          <div class="form-field">
-            <label for="telefono">Telefono <span aria-hidden="true">*</span></label>
-            <input type="tel" id="telefono" name="telefono" required autocomplete="tel" placeholder="030 000 0000">
-          </div>
-          <div class="form-field">
-            <label for="servizio">Servizio di interesse</label>
-            <select id="servizio" name="servizio">
-              <option value="">— Seleziona —</option>
-              <option>Prima visita gratuita</option>
-              <option>Cure conservative</option>
-              <option>Implantologia</option>
-              <option>Ortodonzia</option>
-              <option>Igiene e prevenzione</option>
-              <option>Sbiancamento</option>
-            </select>
-          </div>
-          <div class="form-field">
-            <label for="messaggio">Note (facoltativo)</label>
-            <textarea id="messaggio" name="messaggio" rows="3" placeholder="Es. urgenza, orari preferiti…"></textarea>
-          </div>
-          <div class="form-field form-field--privacy">
-            <input type="checkbox" id="privacy" name="privacy" required>
-            <label for="privacy">
-              Ho letto e accetto la <a href="privacy.html">Privacy Policy</a>. I dati saranno usati solo per rispondere alla richiesta.
-            </label>
-          </div>
-          <button type="submit" class="btn btn--primary btn--lg btn--full">
-            Richiedi appuntamento
-          </button>
-          <p class="form-note">Ti richiamiamo entro l'orario di apertura. Nessuno spam.</p>
-        </form>
-      </div>
-    </section>
-
-    <!-- FAQ -->
-    <section class="faq" id="faq">
-      <div class="container faq__inner">
-        <div class="section-header">
-          <h2>Domande frequenti</h2>
-        </div>
-        <div class="faq__list">
-
-          <details class="faq-item">
-            <summary>La prima visita è davvero gratuita?</summary>
-            <p>Sì. La prima visita di controllo e consulenza è completamente gratuita e senza impegno. Include un'analisi dello stato della bocca e un piano di trattamento personalizzato.</p>
-          </details>
-
-          <details class="faq-item">
-            <summary>Siete convenzionati con il Servizio Sanitario Nazionale?</summary>
-            <p>Sì, lo studio è convenzionato SSN per le prestazioni di base (estrazioni, otturazioni, visite). Per le prestazioni in convenzione è necessaria l'impegnativa del medico di base.</p>
-          </details>
-
-          <details class="faq-item">
-            <summary>Quali metodi di pagamento accettate?</summary>
-            <p>Accettiamo contanti, carte di credito/debito e bancomat. Per trattamenti di importo superiore a €500 offriamo piani di rateizzazione a tasso zero in collaborazione con Cofidis.</p>
-          </details>
-
-          <details class="faq-item">
-            <summary>Quanto dura un trattamento implantare?</summary>
-            <p>Il percorso completo va dai 3 ai 6 mesi per gli impianti tradizionali. Con il carico immediato è possibile avere una corona provvisoria già il giorno dell'intervento.</p>
-          </details>
-
-          <details class="faq-item">
-            <summary>Come posso annullare o spostare un appuntamento?</summary>
-            <p>Puoi chiamarci al 030 123 4567 o scrivere via WhatsApp. Ti chiediamo di avvisarci almeno 24 ore prima per poter riassegnare lo slot ad altri pazienti.</p>
-          </details>
-
-        </div>
-      </div>
-    </section>
-
-  </main>
-
-  <!-- FOOTER -->
-  <footer class="footer">
-    <div class="container footer__inner">
-      <div class="footer__brand">
-        <span class="logo__icon" aria-hidden="true">✦</span>
-        <strong>Studio Dentistico Ferretti</strong>
-        <p>Via Triumplina 45, 25136 Brescia (BS)<br>
-        P.IVA 01234567890 · Iscritto OMCeO Brescia n. 4821</p>
-      </div>
-      <nav class="footer__nav" aria-label="Link utili">
-        <ul>
-          <li><a href="#servizi">Servizi</a></li>
-          <li><a href="#chi-siamo">Chi siamo</a></li>
-          <li><a href="#prenota">Prenota</a></li>
-          <li><a href="privacy.html">Privacy Policy</a></li>
-          <li><a href="cookie.html">Cookie Policy</a></li>
-          <li><a href="note-legali.html">Note Legali</a></li>
-        </ul>
-      </nav>
-      <div class="footer__legal">
-        <p>© 2024 Studio Dentistico Ferretti — Tutti i diritti riservati.</p>
-        <p class="disclaimer">Il contenuto di questo sito ha scopo puramente informativo e non sostituisce il parere medico professionale. Per qualsiasi dubbio consultate il vostro medico o dentista.</p>
+      <div class="hero-trust">
+        <span class="trust-pill">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="#10B981" aria-hidden="true"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+          Prima visita gratuita
+        </span>
+        <span class="trust-pill">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="#10B981" aria-hidden="true"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+          Preventivo senza impegno
+        </span>
+        <span class="trust-pill">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="#10B981" aria-hidden="true"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+          Rate a tasso zero
+        </span>
       </div>
     </div>
-  </footer>
 
-  <!-- CTA sticky mobile -->
-  <div class="sticky-cta" aria-label="Azioni rapide">
-    <a href="tel:+390301234567" class="btn btn--ghost btn--sm">📞 Chiama</a>
-    <a href="#prenota" class="btn btn--primary btn--sm">Prenota</a>
+    <div class="hero-visual" data-animate="fade-left">
+      <div class="hero-img-wrap">
+        <img
+          src="https://images.unsplash.com/photo-1629909615184-74f495363b67?auto=format&fit=crop&w=680&h=780&q=80"
+          alt="Sala trattamenti dello Studio Dentistico Ferretti a Brescia"
+          class="hero-img"
+          width="680" height="780"
+          loading="eager"
+          fetchpriority="high"
+        />
+        <div class="float-card float-card--top">
+          <span class="float-icon">⭐</span>
+          <div><strong>4.9 / 5</strong><small>127 recensioni Google</small></div>
+        </div>
+        <div class="float-card float-card--bottom">
+          <span class="float-icon">🦷</span>
+          <div><strong>3.500+</strong><small>pazienti curati</small></div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════
+     STATS BAR
+══════════════════════════════════════ -->
+<section class="stats-bar" aria-label="Numeri dello studio">
+  <div class="container stats-grid">
+    <div class="stat" data-animate="fade-up" data-delay="0">
+      <span class="stat-value">25+</span>
+      <span class="stat-label">Anni di esperienza</span>
+    </div>
+    <div class="stat" data-animate="fade-up" data-delay="80">
+      <span class="stat-value">3.500+</span>
+      <span class="stat-label">Pazienti soddisfatti</span>
+    </div>
+    <div class="stat" data-animate="fade-up" data-delay="160">
+      <span class="stat-value">4.9 / 5</span>
+      <span class="stat-label">Rating medio Google</span>
+    </div>
+    <div class="stat" data-animate="fade-up" data-delay="240">
+      <span class="stat-value">0 €</span>
+      <span class="stat-label">Prima visita</span>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════
+     SERVICES
+══════════════════════════════════════ -->
+<section class="services" id="servizi" aria-labelledby="services-heading">
+  <div class="container">
+    <header class="section-header" data-animate="fade-up">
+      <span class="eyebrow">I nostri trattamenti</span>
+      <h2 id="services-heading">Tutto ciò di cui il tuo<br/>sorriso ha bisogno</h2>
+      <p>Offriamo una gamma completa di cure con strumentazioni digitali di ultima generazione.</p>
+    </header>
+
+    <div class="services-grid">
+
+      <article class="service-card" data-animate="fade-up" data-delay="0">
+        <div class="service-icon-wrap">
+          <svg width="30" height="30" viewBox="0 0 30 30" fill="none" aria-hidden="true">
+            <circle cx="15" cy="11" r="5.5" fill="#DBEAFE"/>
+            <rect x="12" y="15" width="6" height="11" rx="3" fill="#1D6FA4"/>
+            <path d="M9.5 13l5.5 3.5 5.5-3.5" stroke="#1D6FA4" stroke-width="1.5" fill="none"/>
+          </svg>
+        </div>
+        <h3>Implantologia</h3>
+        <p>Denti fissi permanenti con impianti in titanio. Risultati naturali e duraturi nel tempo.</p>
+        <a href="#prenotazione" class="service-link">Prenota consulenza →</a>
+      </article>
+
+      <article class="service-card" data-animate="fade-up" data-delay="80">
+        <div class="service-icon-wrap">
+          <svg width="30" height="30" viewBox="0 0 30 30" fill="none" aria-hidden="true">
+            <path d="M7 5.5h16l-1.8 19H8.8L7 5.5z" fill="#DBEAFE"/>
+            <path d="M11 9v11M15 7.5v14M19 9v11" stroke="#1D6FA4" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <h3>Ortodonzia</h3>
+        <p>Bretelle tradizionali e allineatori trasparenti Invisalign per un sorriso armonioso.</p>
+        <a href="#prenotazione" class="service-link">Prenota consulenza →</a>
+      </article>
+
+      <article class="service-card" data-animate="fade-up" data-delay="160">
+        <div class="service-icon-wrap">
+          <svg width="30" height="30" viewBox="0 0 30 30" fill="none" aria-hidden="true">
+            <ellipse cx="15" cy="18" rx="8" ry="6" fill="#DBEAFE"/>
+            <path d="M9 8c0-3 2.5-5 5.5-5S18 5 19.5 8" stroke="#1D6FA4" stroke-width="2" fill="none"/>
+            <path d="M9.5 20.5l3 3 9-8" stroke="#10B981" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <h3>Sbiancamento</h3>
+        <p>Sistema Zoom! professionale: fino a 8 tonalità più bianco in un'unica seduta.</p>
+        <a href="#prenotazione" class="service-link">Prenota seduta →</a>
+      </article>
+
+      <article class="service-card" data-animate="fade-up" data-delay="0">
+        <div class="service-icon-wrap">
+          <svg width="30" height="30" viewBox="0 0 30 30" fill="none" aria-hidden="true">
+            <rect x="5" y="7" width="20" height="16" rx="4" fill="#DBEAFE"/>
+            <path d="M10 12h10M10 17h6" stroke="#1D6FA4" stroke-width="2" stroke-linecap="round"/>
+            <circle cx="22.5" cy="19" r="4" fill="#10B981"/>
+            <path d="M20.5 19l1.5 1.5 2.5-2.5" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <h3>Igiene Orale</h3>
+        <p>Pulizia professionale con ultrasuoni e air-flow. Prevenzione personalizzata.</p>
+        <a href="#prenotazione" class="service-link">Prenota seduta →</a>
+      </article>
+
+      <article class="service-card" data-animate="fade-up" data-delay="80">
+        <div class="service-icon-wrap">
+          <svg width="30" height="30" viewBox="0 0 30 30" fill="none" aria-hidden="true">
+            <path d="M15 3.5L5.5 8.5v6c0 5.5 4 10.5 9.5 12 5.5-1.5 9.5-6.5 9.5-12v-6L15 3.5z" fill="#DBEAFE"/>
+            <path d="M10 15.5l3.5 3.5 7.5-7" stroke="#1D6FA4" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <h3>Protesi Dentali</h3>
+        <p>Corone in ceramica e zirconio su misura: estetica e funzionalità perfette.</p>
+        <a href="#prenotazione" class="service-link">Prenota consulenza →</a>
+      </article>
+
+      <article class="service-card" data-animate="fade-up" data-delay="160">
+        <div class="service-icon-wrap">
+          <svg width="30" height="30" viewBox="0 0 30 30" fill="none" aria-hidden="true">
+            <circle cx="15" cy="12" r="7" fill="#DBEAFE"/>
+            <path d="M11 12l2.5 2.5 6-5" stroke="#1D6FA4" stroke-width="2" stroke-linecap="round"/>
+            <path d="M9.5 25c1.5-2.5 9.5-2.5 11 0" stroke="#1D6FA4" stroke-width="1.5" fill="none"/>
+          </svg>
+        </div>
+        <h3>Odontoiatria Pediatrica</h3>
+        <p>Prima visita dai 12 mesi. Ambiente accogliente per mettere i bambini a loro agio.</p>
+        <a href="#prenotazione" class="service-link">Prenota per il tuo bambino →</a>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════
+     CHI SIAMO
+══════════════════════════════════════ -->
+<section class="about" id="chi-siamo" aria-labelledby="about-heading">
+  <div class="container about-inner">
+
+    <div class="about-visual" data-animate="fade-right">
+      <div class="about-img-wrap">
+        <img
+          src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&w=580&h=680&q=80"
+          alt="Dott.ssa Maria Ferretti, direttore sanitario dello studio"
+          class="about-img"
+          width="580" height="680"
+          loading="lazy"
+        />
+        <div class="about-badge">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="8" r="5" fill="#1D6FA4"/><path d="M8 13l4 8 4-8" fill="#0A2540"/></svg>
+          <span>Iscritta Albo Odontoiatri<br/>Brescia n. 2847</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="about-content" data-animate="fade-left">
+      <span class="eyebrow">Chi siamo</span>
+      <h2 id="about-heading">La dott.ssa Ferretti<br/>e il suo team</h2>
+      <p class="about-lead">
+        Specializzata in implantologia ed estetica dentale, la dott.ssa <strong>Maria Ferretti</strong> ha fondato lo studio nel 1998 con un obiettivo preciso: cure dentali di alto livello in un ambiente che metta il paziente a proprio agio.
+      </p>
+      <p>Con un team di quattro professionisti e strumentazioni digitali all'avanguardia — TAC cone-beam, scanner intraorale 3D, laser Er:YAG — ogni trattamento è pianificato con precisione millimetrica.</p>
+
+      <ul class="credentials">
+        <li>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="#1D6FA4" aria-hidden="true"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 17l-6.2 4.3 2.4-7.4L2 9.4h7.6z"/></svg>
+          Specializzazione in Implantologia, Università di Milano
+        </li>
+        <li>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="#1D6FA4" aria-hidden="true"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 17l-6.2 4.3 2.4-7.4L2 9.4h7.6z"/></svg>
+          Master in Estetica Dentale, AIOG Brescia 2015
+        </li>
+        <li>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="#1D6FA4" aria-hidden="true"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 17l-6.2 4.3 2.4-7.4L2 9.4h7.6z"/></svg>
+          Membro SIDO — Società Italiana di Ortodonzia
+        </li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════
+     HOW IT WORKS
+══════════════════════════════════════ -->
+<section class="how-it-works" aria-labelledby="hiw-heading">
+  <div class="container">
+    <header class="section-header" data-animate="fade-up">
+      <span class="eyebrow">Il nostro processo</span>
+      <h2 id="hiw-heading">Come funziona<br/>la tua prima visita</h2>
+    </header>
+
+    <div class="steps">
+      <div class="step" data-animate="fade-up" data-delay="0">
+        <div class="step-num">01</div>
+        <h3>Prenota online</h3>
+        <p>Compila il form o chiamaci. Risponderemo entro 2 ore per confermare l'appuntamento più adatto.</p>
+      </div>
+      <div class="step-arrow" aria-hidden="true">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#1D6FA4" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </div>
+      <div class="step" data-animate="fade-up" data-delay="120">
+        <div class="step-num">02</div>
+        <h3>Visita diagnostica</h3>
+        <p>Radiografia panoramica digitale, esame del cavo orale e colloquio approfondito col medico.</p>
+      </div>
+      <div class="step-arrow" aria-hidden="true">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#1D6FA4" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </div>
+      <div class="step" data-animate="fade-up" data-delay="240">
+        <div class="step-num">03</div>
+        <h3>Piano personalizzato</h3>
+        <p>Preventivo dettagliato e piano di cura. Zero sorprese, massima trasparenza sui costi.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════
+     REVIEWS
+══════════════════════════════════════ -->
+<section class="reviews" id="recensioni" aria-labelledby="reviews-heading">
+  <div class="container">
+    <header class="section-header" data-animate="fade-up">
+      <span class="eyebrow">Cosa dicono i pazienti</span>
+      <h2 id="reviews-heading">127 recensioni su Google.<br/>Media <em>4.9 stelle</em>.</h2>
+    </header>
+
+    <div class="reviews-grid">
+
+      <article class="review-card" data-animate="fade-up" data-delay="0">
+        <div class="review-stars" aria-label="5 stelle su 5">★★★★★</div>
+        <blockquote>
+          <p>"Finalmente uno studio dove mi sento a mio agio. La dottoressa spiega tutto con chiarezza. L'impianto è riuscito perfettamente, senza dolori e con ottimi risultati estetici."</p>
+        </blockquote>
+        <footer class="review-footer">
+          <img
+            src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=56&h=56&q=80"
+            alt="Giulia M." class="review-avatar" width="44" height="44" loading="lazy"
+          />
+          <div>
+            <cite class="review-name">Giulia M.</cite>
+            <span class="review-meta">3 settimane fa · Google</span>
+          </div>
+        </footer>
+      </article>
+
+      <article class="review-card review-card--featured" data-animate="fade-up" data-delay="100">
+        <div class="review-stars" aria-label="5 stelle su 5">★★★★★</div>
+        <blockquote>
+          <p>"Ho rifatto tutto il sorriso con faccette in ceramica. Il risultato è incredibile, molto naturale. Staff gentilissimo, studio modernissimo. Consigliatissimo a Brescia!"</p>
+        </blockquote>
+        <footer class="review-footer">
+          <img
+            src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=56&h=56&q=80"
+            alt="Marco V." class="review-avatar" width="44" height="44" loading="lazy"
+          />
+          <div>
+            <cite class="review-name">Marco V.</cite>
+            <span class="review-meta">1 mese fa · Google</span>
+          </div>
+        </footer>
+      </article>
+
+      <article class="review-card" data-animate="fade-up" data-delay="200">
+        <div class="review-stars" aria-label="5 stelle su 5">★★★★★</div>
+        <blockquote>
+          <p>"Mia figlia ha iniziato l'ortodonzia a 12 anni. La dottoressa è stata bravissima a metterla a suo agio. A 15 anni il risultato è spettacolare. Grazie di cuore!"</p>
+        </blockquote>
+        <footer class="review-footer">
+          <img
+            src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&w=56&h=56&q=80"
+            alt="Antonella R." class="review-avatar" width="44" height="44" loading="lazy"
+          />
+          <div>
+            <cite class="review-name">Antonella R.</cite>
+            <span class="review-meta">2 mesi fa · Google</span>
+          </div>
+        </footer>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════
+     CTA BAND
+══════════════════════════════════════ -->
+<section class="cta-band" aria-labelledby="cta-heading">
+  <div class="container cta-band-inner" data-animate="fade-up">
+    <div>
+      <h2 id="cta-heading">Prenditi cura del tuo sorriso.<br/>La prima visita è gratuita.</h2>
+      <p>Nessun obbligo, nessun costo nascosto. Solo un esame diagnostico completo.</p>
+    </div>
+    <a href="#prenotazione" class="btn btn-white btn-lg">
+      Prenota la prima visita
+      <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+    </a>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════
+     BOOKING FORM
+══════════════════════════════════════ -->
+<section class="booking" id="prenotazione" aria-labelledby="booking-heading">
+  <div class="container">
+    <header class="section-header" data-animate="fade-up">
+      <span class="eyebrow">Prenota online</span>
+      <h2 id="booking-heading">Fissa il tuo appuntamento</h2>
+      <p>Compila il modulo. Ti ricontattiamo entro 2 ore per confermare.</p>
+    </header>
+
+    <form class="booking-form" id="booking-form" novalidate data-animate="fade-up">
+      <div class="form-row">
+        <div class="form-group">
+          <label for="nome">Nome e cognome <span aria-hidden="true">*</span></label>
+          <input type="text" id="nome" name="nome" placeholder="Es. Mario Rossi" required autocomplete="name" />
+        </div>
+        <div class="form-group">
+          <label for="telefono">Telefono <span aria-hidden="true">*</span></label>
+          <input type="tel" id="telefono" name="telefono" placeholder="Es. 333 123 4567" required autocomplete="tel" />
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="mario.rossi@email.it" autocomplete="email" />
+        </div>
+        <div class="form-group">
+          <label for="servizio">Trattamento di interesse</label>
+          <select id="servizio" name="servizio">
+            <option value="">Seleziona un trattamento…</option>
+            <option>Implantologia</option>
+            <option>Ortodonzia / Invisalign</option>
+            <option>Sbiancamento</option>
+            <option>Igiene orale professionale</option>
+            <option>Protesi dentale</option>
+            <option>Odontoiatria pediatrica</option>
+            <option>Visita di controllo</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="messaggio">Note aggiuntive</label>
+        <textarea id="messaggio" name="messaggio" rows="3" placeholder="Descrivi brevemente il motivo della visita o eventuali urgenze…"></textarea>
+      </div>
+
+      <div class="form-bottom">
+        <label class="checkbox-wrap">
+          <input type="checkbox" name="privacy" required />
+          <span>Ho letto e accetto la <a href="#" target="_blank" rel="noopener noreferrer">Privacy Policy</a> ai sensi del GDPR 2016/679 <span aria-hidden="true">*</span></span>
+        </label>
+        <button type="submit" class="btn btn-primary btn-lg">
+          Invia richiesta
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </button>
+      </div>
+
+      <div class="form-success" id="form-success" role="status" aria-live="polite" hidden>
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="10" fill="#10B981"/><path d="M7 12l4 4 6-6" stroke="white" stroke-width="2" stroke-linecap="round"/></svg>
+        <span><strong>Richiesta inviata!</strong> Ti contatteremo entro 2 ore per confermare l'appuntamento.</span>
+      </div>
+    </form>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════
+     FAQ
+══════════════════════════════════════ -->
+<section class="faq" id="faq" aria-labelledby="faq-heading">
+  <div class="container faq-inner">
+
+    <div class="faq-lead" data-animate="fade-right">
+      <span class="eyebrow">Domande frequenti</span>
+      <h2 id="faq-heading">Risposte alle domande più comuni</h2>
+      <p>Non trovi risposta? <a href="#prenotazione">Scrivici</a> e ti risponderemo entro poche ore.</p>
+    </div>
+
+    <div class="faq-list" data-animate="fade-left">
+      <details class="faq-item" open>
+        <summary>La prima visita è davvero gratuita?</summary>
+        <div class="faq-body">Sì, la prima visita diagnostica è completamente gratuita e senza impegno. Include colloquio con il medico ed esame del cavo orale. La radiografia panoramica digitale, se necessaria, ha un costo di €30.</div>
+      </details>
+      <details class="faq-item">
+        <summary>Accettate il Servizio Sanitario Nazionale?</summary>
+        <div class="faq-body">Lavoriamo prevalentemente in regime privato. Offriamo però piani di rateizzazione a tasso zero fino a 24 mesi tramite finanziamento Cofidis, per rendere accessibili tutti i trattamenti.</div>
+      </details>
+      <details class="faq-item">
+        <summary>Quanto dura un trattamento con allineatori?</summary>
+        <div class="faq-body">Da 6 a 18 mesi in base alla complessità del caso. Dopo una simulazione digitale gratuita, il medico fornirà una stima precisa per la tua situazione specifica.</div>
+      </details>
+      <details class="faq-item">
+        <summary>Lo studio è accessibile in sedia a rotelle?</summary>
+        <div class="faq-body">Sì, la sede di Via Trieste 42 è priva di barriere architettoniche. Il piano terra è completamente accessibile, con parcheggio dedicato nelle vicinanze.</div>
+      </details>
+      <details class="faq-item">
+        <summary>Visitate anche i bambini piccoli?</summary>
+        <div class="faq-body">Sì, la nostra specialista in odontoiatria pediatrica visita bambini a partire dai 12 mesi. Il primo controllo precoce è fondamentale per la prevenzione carie e il corretto sviluppo dentale.</div>
+      </details>
+    </div>
+
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════
+     FOOTER
+══════════════════════════════════════ -->
+<footer class="site-footer" id="contatti">
+  <div class="container footer-grid">
+
+    <div class="footer-brand">
+      <a href="#" class="logo logo--light" aria-label="Studio Dentistico Ferretti">
+        <svg width="30" height="30" viewBox="0 0 34 34" fill="none" aria-hidden="true">
+          <rect width="34" height="34" rx="9" fill="#38BDF8"/>
+          <path d="M11 9c-2.2 0-4.2 2-4.2 5.2 0 3 1.1 5.2 4.2 8.3.9 1 2 2.1 2 3.2 0 1 .8 2 1.8 2s1.8-1 1.8-2l.4-2c.5 1.1 1 2 1.8 2s1.8-1 1.8-2v-1.5c1-1 3.2-4.3 3.2-8s-2-5.2-4.2-5.2c-1.5 0-3 1-3 1S12.6 9 11 9z" fill="white"/>
+        </svg>
+        <span class="logo-text" style="color:white;">Ferretti<span style="color:#38BDF8;">Dental</span></span>
+      </a>
+      <p>Cure dentali d'eccellenza a Brescia dal 1998.</p>
+      <div class="socials">
+        <a href="#" aria-label="Facebook" class="social-btn">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+        </a>
+        <a href="#" aria-label="Instagram" class="social-btn">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none"/></svg>
+        </a>
+        <a href="#" aria-label="Google Maps" class="social-btn">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5S10.62 6.5 12 6.5s2.5 1.12 2.5 2.5S13.38 11.5 12 11.5z"/></svg>
+        </a>
+      </div>
+    </div>
+
+    <div class="footer-col">
+      <h4>Trattamenti</h4>
+      <ul>
+        <li><a href="#prenotazione">Implantologia</a></li>
+        <li><a href="#prenotazione">Ortodonzia</a></li>
+        <li><a href="#prenotazione">Sbiancamento</a></li>
+        <li><a href="#prenotazione">Igiene Orale</a></li>
+        <li><a href="#prenotazione">Protesi Dentali</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>Studio</h4>
+      <ul>
+        <li><a href="#chi-siamo">Il team</a></li>
+        <li><a href="#recensioni">Recensioni</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Cookie Policy</a></li>
+      </ul>
+    </div>
+
+    <address class="footer-contact">
+      <h4>Contatti e orari</h4>
+      <p>
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        Via Trieste 42, 25121 Brescia
+      </p>
+      <p>
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.63A2 2 0 012 .9h3a2 2 0 012 1.72c.13.96.36 1.9.7 2.81a2 2 0 01-.45 2.11L6.91 8.58a16 16 0 006.5 6.5l1.04-1.04a2 2 0 012.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0122 16.92z"/></svg>
+        <a href="tel:+390301234567">030 123 4567</a>
+      </p>
+      <p>
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+        <a href="mailto:info@ferrettidental.it">info@ferrettidental.it</a>
+      </p>
+      <p class="hours">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12,6 12,12 16,14"/></svg>
+        Lun–Ven: 08:30–19:30<br/>Sabato: 09:00–13:00
+      </p>
+    </address>
+
   </div>
 
-  <script src="main.js"></script>
+  <div class="footer-bottom">
+    <div class="container footer-bottom-inner">
+      <p>© 2025 Studio Dentistico Ferretti S.r.l. &nbsp;·&nbsp; P.IVA 01234567890 &nbsp;·&nbsp; Albo Odontoiatri Brescia n. 2847</p>
+      <p>Sito realizzato da <a href="mailto:alessiocalderaro1@gmail.com">[Webmaster]</a></p>
+    </div>
+  </div>
+</footer>
+
+</main>
+
+<!-- WhatsApp FAB -->
+<a href="https://wa.me/390301234567?text=Ciao!%20Vorrei%20prenotare%20una%20visita."
+   class="whatsapp-fab"
+   target="_blank"
+   rel="noopener noreferrer"
+   aria-label="Contattaci su WhatsApp">
+  <svg width="26" height="26" viewBox="0 0 32 32" fill="white" aria-hidden="true">
+    <path d="M16 2C8.27 2 2 8.27 2 16c0 2.47.65 4.79 1.78 6.81L2 30l7.41-1.75A13.9 13.9 0 0016 30c7.73 0 14-6.27 14-14S23.73 2 16 2zm7.26 19.6c-.3.83-1.76 1.57-2.43 1.65-.62.08-1.39.11-2.24-.14-.52-.15-1.18-.35-2.03-.69-3.55-1.54-5.87-5.1-6.05-5.34-.18-.23-1.49-1.98-1.49-3.77 0-1.79.93-2.67 1.27-3.03.33-.36.72-.45.96-.45.24 0 .48.01.69.01.22.01.52-.08.81.62.3.71 1.02 2.5 1.11 2.68.09.18.15.39.03.63-.12.24-.18.38-.36.59-.18.21-.38.47-.54.63-.18.18-.37.37-.16.73.21.36.93 1.54 2.01 2.49 1.38 1.23 2.55 1.61 2.91 1.79.36.18.57.15.78-.09.21-.24.9-1.05 1.14-1.41.24-.36.48-.3.81-.18.33.12 2.1.99 2.46 1.17.36.18.6.27.69.42.09.15.09.88-.21 1.71z"/>
+  </svg>
+</a>
+
+<!-- Sticky mobile CTA -->
+<div class="sticky-cta" aria-hidden="true">
+  <a href="tel:+390301234567" class="btn btn-ghost btn-md">
+    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.63A2 2 0 012 .9h3a2 2 0 012 1.72c.13.96.36 1.9.7 2.81a2 2 0 01-.45 2.11L6.91 8.58a16 16 0 006.5 6.5l1.04-1.04a2 2 0 012.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0122 16.92z"/></svg>
+    Chiama
+  </a>
+  <a href="#prenotazione" class="btn btn-primary btn-md">Prenota online</a>
+</div>
+
+<script src="main.js"></script>
 </body>
 </html>
