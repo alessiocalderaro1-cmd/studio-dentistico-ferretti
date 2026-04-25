@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Studio Dentistico Ferretti — Brescia</title>
+  <meta name="description" content="Studio dentistico a Brescia. Cure odontoiatriche per tutta la famiglia, implantologia, ortodonzia e sbiancamento. Prenota online.">
+
+  <!-- Self-hosted font via Bunny Fonts (no GDPR issues) -->
+  <link rel="preconnect" href="https://fonts.bunny.net">
+  <link href="https://fonts.bunny.net/css?family=fraunces:400,600,700|inter:400,500,600" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Schema.org LocalBusiness + Dentist -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Dentist",
+    "name": "Studio Dentistico Ferretti",
+    "description": "Studio dentistico a Brescia specializzato in implantologia, ortodonzia e cure conservative per tutta la famiglia.",
+    "url": "https://studiodenttisticoferretti.it",
+    "telephone": "+39 030 123 4567",
+    "email": "info@studiodenttisticoferretti.it",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Via Triumplina 45",
+      "addressLocality": "Brescia",
+      "postalCode": "25136",
+      "addressRegion": "BS",
+      "addressCountry": "IT"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 45.5416,
+      "longitude": 10.2118
+    },
+    "openingHoursSpecification": [
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "09:00", "closes": "19:00" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "09:00", "closes": "13:00" }
+    ],
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.9",
+      "reviewCount": "127",
+      "bestRating": "5"
+    },
+    "medicalSpecialty": ["Dentistry", "Orthodontics", "Implantology"],
+    "priceRange": "€€"
+  }
+  </script>
+</head>
+<body>
+
+  <!-- SKIP LINK accessibilità -->
+  <a class="skip-link" href="#main">Vai al contenuto principale</a>
+
+  <!-- HEADER -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="/" class="logo" aria-label="Studio Dentistico Ferretti — Homepage">
+        <span class="logo__icon" aria-hidden="true">✦</span>
+        <span class="logo__text">Studio Dentistico <strong>Ferretti</strong></span>
+      </a>
+      <nav class="nav" aria-label="Navigazione principale">
+        <ul class="nav__list">
+          <li><a href="#servizi" class="nav__link">Servizi</a></li>
+          <li><a href="#chi-siamo" class="nav__link">Chi siamo</a></li>
+          <li><a href="#recensioni" class="nav__link">Recensioni</a></li>
+          <li><a href="#faq" class="nav__link">FAQ</a></li>
+        </ul>
+      </nav>
+      <a href="#prenota" class="btn btn--primary btn--sm header__cta">Prenota visita</a>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero__inner">
+        <div class="hero__content">
+          <div class="hero__badge">
+            <span>⭐ 4,9/5 su Google · 127 recensioni</span>
+          </div>
+          <h1 class="hero__title">
+            Il sorriso che hai sempre<br>
+            <em>voluto avere</em>
+          </h1>
+          <p class="hero__sub">
+            Studio dentistico a Brescia dal 1998. Cure conservative, implantologia e ortodonzia per tutta la famiglia — in un ambiente moderno e senza ansia.
+          </p>
+          <div class="hero__ctas">
+            <a href="#prenota" class="btn btn--primary btn--lg">Prenota una visita</a>
+            <a href="tel:+390301234567" class="btn btn--ghost btn--lg">
+              <span aria-hidden="true">📞</span> 030 123 4567
+            </a>
+          </div>
+          <div class="hero__trust">
+            <span class="trust-pill">✔ Convenzionato SSN</span>
+            <span class="trust-pill">✔ Iscritto Albo FNOMCEO</span>
+            <span class="trust-pill">✔ Prima visita gratuita</span>
+          </div>
+        </div>
+        <div class="hero__image-wrap" aria-hidden="true">
+          <div class="hero__image-placeholder">
+            <span>Foto studio / Dr. Ferretti</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TRUST BAR -->
+    <section class="trust-bar" aria-label="Numeri dello studio">
+      <div class="container trust-bar__grid">
+        <div class="trust-bar__item">
+          <strong>+2.400</strong>
+          <span>pazienti seguiti</span>
+        </div>
+        <div class="trust-bar__item">
+          <strong>26 anni</strong>
+          <span>di esperienza</span>
+        </div>
+        <div class="trust-bar__item">
+          <strong>4,9 ★</strong>
+          <span>su Google Maps</span>
+        </div>
+        <div class="trust-bar__item">
+          <strong>3 dentisti</strong>
+          <span>specializzati</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVIZI -->
+    <section class="servizi" id="servizi">
+      <div class="container">
+        <div class="section-header">
+          <h2>I nostri servizi</h2>
+          <p>Tutto quello che serve alla salute del tuo sorriso, in un unico posto.</p>
+        </div>
+        <div class="servizi__grid">
+
+          <article class="servizio-card">
+            <div class="servizio-card__icon" aria-hidden="true">🦷</div>
+            <h3>Cure conservative</h3>
+            <p>Otturazioni, devitalizzazioni e trattamenti canalari con strumentazione digitale di ultima generazione.</p>
+            <a href="#prenota" class="link-arrow">Prenota →</a>
+          </article>
+
+          <article class="servizio-card">
+            <div class="servizio-card__icon" aria-hidden="true">🔩</div>
+            <h3>Implantologia</h3>
+            <p>Impianti in titanio a carico immediato. Recupera la funzionalità e l'estetica in tempi brevi.</p>
+            <a href="#prenota" class="link-arrow">Prenota →</a>
+          </article>
+
+          <article class="servizio-card">
+            <div class="servizio-card__icon" aria-hidden="true">😁</div>
+            <h3>Ortodonzia</h3>
+            <p>Apparecchi fissi, rimovibili e allineatori trasparenti (Invisalign) per adulti e bambini.</p>
+            <a href="#prenota" class="link-arrow">Prenota →</a>
+          </article>
+
+          <article class="servizio-card">
+            <div class="servizio-card__icon" aria-hidden="true">✨</div>
+            <h3>Sbiancamento</h3>
+            <p>Trattamento professionale in studio o kit domiciliare. Risultati visibili già dalla prima seduta.</p>
+            <a href="#prenota" class="link-arrow">Prenota →</a>
+          </article>
+
+          <article class="servizio-card">
+            <div class="servizio-card__icon" aria-hidden="true">🧒</div>
+            <h3>Odontoiatria pediatrica</h3>
+            <p>Visite e trattamenti pensati per i più piccoli, in un ambiente accogliente e senza paura.</p>
+            <a href="#prenota" class="link-arrow">Prenota →</a>
+          </article>
+
+          <article class="servizio-card">
+            <div class="servizio-card__icon" aria-hidden="true">🩺</div>
+            <h3>Igiene e prevenzione</h3>
+            <p>Igienizzazione professionale, sbiancamento, ablazione del tartaro e piano di prevenzione annuale.</p>
+            <a href="#prenota" class="link-arrow">Prenota →</a>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CHI SIAMO -->
+    <section class="chi-siamo" id="chi-siamo">
+      <div class="container chi-siamo__inner">
+        <div class="chi-siamo__image-wrap" aria-hidden="true">
+          <div class="chi-siamo__image-placeholder">
+            Foto Dr. Ferretti / team
+          </div>
+        </div>
+        <div class="chi-siamo__content">
+          <span class="eyebrow">Il tuo dentista di fiducia</span>
+          <h2>Dr. Marco Ferretti</h2>
+          <p class="chi-siamo__credentials">
+            <strong>Specializzazione in Implantologia · Università degli Studi di Brescia</strong>
+          </p>
+          <p>
+            Laureato in Odontoiatria e Protesi Dentaria presso l'Università di Brescia, il Dr. Ferretti ha fondato lo studio nel 1998 con un obiettivo chiaro: offrire cure di alto livello in un ambiente dove il paziente si senta a proprio agio.
+          </p>
+          <p>
+            Iscritto all'Ordine dei Medici e Odontoiatri di Brescia (FNOMCEO), aggiorna costantemente le proprie competenze con corsi ECM certificati.
+          </p>
+          <div class="chi-siamo__badges">
+            <div class="badge">
+              <strong>Iscrizione Albo</strong>
+              <span>OMCeO Brescia n. 4821</span>
+            </div>
+            <div class="badge">
+              <strong>Convenzionato</strong>
+              <span>Servizio Sanitario Nazionale</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- RECENSIONI -->
+    <section class="recensioni" id="recensioni">
+      <div class="container">
+        <div class="section-header">
+          <h2>Cosa dicono i pazienti</h2>
+          <p>127 recensioni su Google · Media 4,9 su 5</p>
+        </div>
+        <div class="recensioni__grid">
+
+          <blockquote class="recensione-card">
+            <div class="recensione-card__stars" aria-label="5 stelle su 5">★★★★★</div>
+            <p>"Finalmente uno studio dove non ho più paura dal dentista. Il Dr. Ferretti è preciso, professionale e mette a proprio agio fin dal primo momento. Lo consiglio a tutti."</p>
+            <footer>
+              <strong>Giulia M.</strong>
+              <span>· Brescia · verificata su Google</span>
+            </footer>
+          </blockquote>
+
+          <blockquote class="recensione-card">
+            <div class="recensione-card__stars" aria-label="5 stelle su 5">★★★★★</div>
+            <p>"Ho fatto un impianto qui dopo anni di indecisione. Risultato perfetto, tempi rispettati e personale gentilissimo. Vale ogni centesimo."</p>
+            <footer>
+              <strong>Roberto C.</strong>
+              <span>· Brescia · verificata su Google</span>
+            </footer>
+          </blockquote>
+
+          <blockquote class="recensione-card">
+            <div class="recensione-card__stars" aria-label="5 stelle su 5">★★★★★</div>
+            <p>"Porto i miei figli qui da 4 anni. Sono bravissimi con i bambini — mio figlio di 7 anni non ha più paura di venire dal dentista. Studio moderno e sempre puntuale."</p>
+            <footer>
+              <strong>Sara B.</strong>
+              <span>· Concesio · verificata su Google</span>
+            </footer>
+          </blockquote>
+
+        </div>
+        <div class="recensioni__cta">
+          <a href="https://maps.google.com" target="_blank" rel="noopener" class="btn btn--outline">
+            Leggi tutte le recensioni su Google
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRENOTA -->
+    <section class="prenota" id="prenota">
+      <div class="container prenota__inner">
+        <div class="prenota__content">
+          <span class="eyebrow">Prima visita gratuita</span>
+          <h2>Prenota la tua visita</h2>
+          <p>Compila il modulo e ti ricontattiamo entro pochi minuti negli orari di apertura.</p>
+          <ul class="prenota__info">
+            <li>📍 Via Triumplina 45, Brescia</li>
+            <li>📞 030 123 4567</li>
+            <li>🕐 Lun–Ven 9:00–19:00 · Sab 9:00–13:00</li>
+          </ul>
+        </div>
+        <form class="prenota__form" action="#" method="POST" novalidate>
+          <div class="form-field">
+            <label for="nome">Nome e cognome <span aria-hidden="true">*</span></label>
+            <input type="text" id="nome" name="nome" required autocomplete="name" placeholder="Mario Rossi">
+          </div>
+          <div class="form-field">
+            <label for="telefono">Telefono <span aria-hidden="true">*</span></label>
+            <input type="tel" id="telefono" name="telefono" required autocomplete="tel" placeholder="030 000 0000">
+          </div>
+          <div class="form-field">
+            <label for="servizio">Servizio di interesse</label>
+            <select id="servizio" name="servizio">
+              <option value="">— Seleziona —</option>
+              <option>Prima visita gratuita</option>
+              <option>Cure conservative</option>
+              <option>Implantologia</option>
+              <option>Ortodonzia</option>
+              <option>Igiene e prevenzione</option>
+              <option>Sbiancamento</option>
+            </select>
+          </div>
+          <div class="form-field">
+            <label for="messaggio">Note (facoltativo)</label>
+            <textarea id="messaggio" name="messaggio" rows="3" placeholder="Es. urgenza, orari preferiti…"></textarea>
+          </div>
+          <div class="form-field form-field--privacy">
+            <input type="checkbox" id="privacy" name="privacy" required>
+            <label for="privacy">
+              Ho letto e accetto la <a href="privacy.html">Privacy Policy</a>. I dati saranno usati solo per rispondere alla richiesta.
+            </label>
+          </div>
+          <button type="submit" class="btn btn--primary btn--lg btn--full">
+            Richiedi appuntamento
+          </button>
+          <p class="form-note">Ti richiamiamo entro l'orario di apertura. Nessuno spam.</p>
+        </form>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq" id="faq">
+      <div class="container faq__inner">
+        <div class="section-header">
+          <h2>Domande frequenti</h2>
+        </div>
+        <div class="faq__list">
+
+          <details class="faq-item">
+            <summary>La prima visita è davvero gratuita?</summary>
+            <p>Sì. La prima visita di controllo e consulenza è completamente gratuita e senza impegno. Include un'analisi dello stato della bocca e un piano di trattamento personalizzato.</p>
+          </details>
+
+          <details class="faq-item">
+            <summary>Siete convenzionati con il Servizio Sanitario Nazionale?</summary>
+            <p>Sì, lo studio è convenzionato SSN per le prestazioni di base (estrazioni, otturazioni, visite). Per le prestazioni in convenzione è necessaria l'impegnativa del medico di base.</p>
+          </details>
+
+          <details class="faq-item">
+            <summary>Quali metodi di pagamento accettate?</summary>
+            <p>Accettiamo contanti, carte di credito/debito e bancomat. Per trattamenti di importo superiore a €500 offriamo piani di rateizzazione a tasso zero in collaborazione con Cofidis.</p>
+          </details>
+
+          <details class="faq-item">
+            <summary>Quanto dura un trattamento implantare?</summary>
+            <p>Il percorso completo va dai 3 ai 6 mesi per gli impianti tradizionali. Con il carico immediato è possibile avere una corona provvisoria già il giorno dell'intervento.</p>
+          </details>
+
+          <details class="faq-item">
+            <summary>Come posso annullare o spostare un appuntamento?</summary>
+            <p>Puoi chiamarci al 030 123 4567 o scrivere via WhatsApp. Ti chiediamo di avvisarci almeno 24 ore prima per poter riassegnare lo slot ad altri pazienti.</p>
+          </details>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <span class="logo__icon" aria-hidden="true">✦</span>
+        <strong>Studio Dentistico Ferretti</strong>
+        <p>Via Triumplina 45, 25136 Brescia (BS)<br>
+        P.IVA 01234567890 · Iscritto OMCeO Brescia n. 4821</p>
+      </div>
+      <nav class="footer__nav" aria-label="Link utili">
+        <ul>
+          <li><a href="#servizi">Servizi</a></li>
+          <li><a href="#chi-siamo">Chi siamo</a></li>
+          <li><a href="#prenota">Prenota</a></li>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="cookie.html">Cookie Policy</a></li>
+          <li><a href="note-legali.html">Note Legali</a></li>
+        </ul>
+      </nav>
+      <div class="footer__legal">
+        <p>© 2024 Studio Dentistico Ferretti — Tutti i diritti riservati.</p>
+        <p class="disclaimer">Il contenuto di questo sito ha scopo puramente informativo e non sostituisce il parere medico professionale. Per qualsiasi dubbio consultate il vostro medico o dentista.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- CTA sticky mobile -->
+  <div class="sticky-cta" aria-label="Azioni rapide">
+    <a href="tel:+390301234567" class="btn btn--ghost btn--sm">📞 Chiama</a>
+    <a href="#prenota" class="btn btn--primary btn--sm">Prenota</a>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
