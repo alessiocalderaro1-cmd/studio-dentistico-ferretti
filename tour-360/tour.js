@@ -66,14 +66,44 @@ const scene = new THREE.Scene();
 const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
 camera.position.set(0, 0, 0.01);
 
-// Sphere geometry inside-out
-const geometry = new THREE.SphereGeometry(500, 60, 40);
+// Sphere geometry inside-out — alta segmentazione per ridurre artefatti
+const geometry = new THREE.SphereGeometry(500, 128, 64);
 geometry.scale(-1, 1, 1);
 
-const loader = new THREE.TextureLoader();
 let material = new THREE.MeshBasicMaterial({ transparent: true, opacity: 0 });
 const sphere = new THREE.Mesh(geometry, material);
 scene.add(sphere);
+
+// Risoluzione panorama (equirectangular 2:1)
+const PANO_WIDTH = 4096;
+const PANO_HEIGHT = 2048;
+
+// Caricatore custom: rasterizza SVG in canvas ad alta risoluzione, evita
+// downscaling automatico del browser su SVG senza width/height esplicito
+function loadPanoramaTexture(url) {
+  return new Promise((resolve, reject) => {
+    const img = new Image();
+    img.crossOrigin = 'anonymous';
+    img.onload = () => {
+      const canvas = document.createElement('canvas');
+      canvas.width = PANO_WIDTH;
+      canvas.height = PANO_HEIGHT;
+      const ctx = canvas.getContext('2d');
+      ctx.imageSmoothingEnabled = true;
+      ctx.imageSmoothingQuality = 'high';
+      ctx.drawImage(img, 0, 0, PANO_WIDTH, PANO_HEIGHT);
+      const texture = new THREE.CanvasTexture(canvas);
+      texture.colorSpace = THREE.SRGBColorSpace;
+      texture.minFilter = THREE.LinearFilter;
+      texture.magFilter = THREE.LinearFilter;
+      texture.generateMipmaps = false;
+      texture.anisotropy = renderer.capabilities.getMaxAnisotropy();
+      resolve(texture);
+    };
+    img.onerror = (e) => reject(e);
+    img.src = url;
+  });
+}
 
 // ── Camera control state ──────────────────────────────────────────
 let lon = 0, lat = 0;
@@ -204,34 +234,28 @@ function loadRoom(roomKey, transition = false) {
     roomCounter.innerHTML = `${String(room.num).padStart(2, '0')} <strong>/</strong> 04`;
   }
 
-  loader.load(
-    room.image,
-    (texture) => {
-      texture.mapping = THREE.EquirectangularReflectionMapping;
-      texture.colorSpace = THREE.SRGBColorSpace;
-      // Fade transition
-      if (transition && !reduced) {
-        fadeMaterial(texture);
-      } else {
-        material.map = texture;
-        material.opacity = 1;
-        material.needsUpdate = true;
-      }
-      buildHotspots(room);
-      loading.classList.add('is-hidden');
-    },
-    undefined,
-    (err) => {
-      console.error('Tour panorama load error:', err);
-      loading.classList.add('is-hidden');
+  loadPanoramaTexture(room.image).then((texture) => {
+    if (transition && !reduced) {
+      fadeMaterial(texture);
+    } else {
+      if (material.map) material.map.dispose();
+      material.map = texture;
+      material.opacity = 1;
+      material.needsUpdate = true;
     }
-  );
+    buildHotspots(room);
+    loading.classList.add('is-hidden');
+  }).catch((err) => {
+    console.error('Tour panorama load error:', err);
+    loading.classList.add('is-hidden');
+  });
 }
 
 function fadeMaterial(newTexture) {
   const startTime = performance.now();
   const duration = 600;
   const startOpacity = material.opacity;
+  const oldMap = material.map;
 
   function fadeOut(t) {
     const progress = Math.min((t - startTime) / duration, 1);
@@ -241,6 +265,7 @@ function fadeMaterial(newTexture) {
       requestAnimationFrame(fadeOut);
     } else {
       material.map = newTexture;
+      if (oldMap) oldMap.dispose();
       material.needsUpdate = true;
       const fadeInStart = performance.now();
       function fadeIn(t2) {
