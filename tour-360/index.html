@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tour 360° — Studio Dentistico Ferretti</title>
+  <meta name="description" content="Tour virtuale 360° dello Studio Dentistico Ferretti di Brescia. Esplora ingresso, sala d'attesa, riunito odontoiatrico, sala chirurgica.">
+  <link rel="stylesheet" href="tour.css">
+  <link rel="stylesheet" href="themes.css">
+</head>
+<body class="theme-v3">
+
+  <div class="tour-container">
+
+    <canvas id="tour-canvas" aria-label="Tour panoramico 360 dello studio Ferretti"></canvas>
+
+    <!-- UI overlay -->
+    <header class="tour-header">
+      <a href="#" class="tour-back" id="tour-back" aria-label="Torna al sito">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+        <span>Torna al sito</span>
+      </a>
+      <div class="tour-title-bar">
+        <p class="tour-eyebrow">Studio Ferretti — Brescia</p>
+        <h1 class="tour-room-title" id="room-title">Ingresso</h1>
+      </div>
+      <div class="tour-counter" id="room-counter">01 / 04</div>
+    </header>
+
+    <!-- Hotspot tooltip benvenuto -->
+    <div class="tour-tooltip" id="welcome-tooltip">
+      <p>Trascina per ruotare. Clicca sui punti luminosi per cambiare ambiente.</p>
+      <button class="tour-tooltip-close">Inizia →</button>
+    </div>
+
+    <!-- Room navigation -->
+    <nav class="tour-rooms" aria-label="Ambienti">
+      <button class="tour-room is-active" data-room="entrance">
+        <span class="tour-room-num">01</span>
+        <span class="tour-room-name">Ingresso</span>
+      </button>
+      <button class="tour-room" data-room="waiting">
+        <span class="tour-room-num">02</span>
+        <span class="tour-room-name">Sala d'attesa</span>
+      </button>
+      <button class="tour-room" data-room="chair">
+        <span class="tour-room-num">03</span>
+        <span class="tour-room-name">Riunito</span>
+      </button>
+      <button class="tour-room" data-room="surgery">
+        <span class="tour-room-num">04</span>
+        <span class="tour-room-name">Sala chirurgica</span>
+      </button>
+    </nav>
+
+    <!-- Loading -->
+    <div class="tour-loading" id="tour-loading">
+      <div class="tour-loading-spinner"></div>
+      <p>Caricamento panorama…</p>
+    </div>
+
+    <!-- No-WebGL fallback -->
+    <noscript>
+      <div class="tour-fallback">
+        <h2>Tour 360° non disponibile</h2>
+        <p>Il tour virtuale richiede JavaScript abilitato e un browser moderno con supporto WebGL.</p>
+      </div>
+    </noscript>
+
+  </div>
+
+  <script type="importmap">
+  {
+    "imports": {
+      "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js"
+    }
+  }
+  </script>
+  <script type="module" src="tour.js"></script>
+</body>
+</html>

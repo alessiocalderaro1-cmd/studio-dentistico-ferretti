@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prenotazione — Studio Dentistico Ferretti</title>
+  <meta name="description" content="Prenota una consulenza specialistica allo Studio Ferretti di Brescia. Telefono diretto 030 374 9123, WhatsApp, form online.">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/svg+xml" href="logo.svg">
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="/v2-medical/"><img src="logo.svg" alt="Studio Ferretti" class="logo"></a>
+      <nav class="main-nav"><a href="/v2-medical/">Home</a><a href="servizi.html">Servizi</a><a href="team.html">Specialisti</a><a href="casi-clinici.html">Casi clinici</a><a href="smile-design.html">Smile design</a><a href="blog.html">Blog</a><a href="chi-siamo.html">Studio</a><a href="contatti.html">Contatti</a></nav>
+      <div class="header-actions"><a href="tel:+390303749123" class="tel-cta">030 374 9123</a></div>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <p class="breadcrumb"><a href="/v2-medical/">Home</a> / Prenotazione</p>
+        <p class="eyebrow">Prima visita di valutazione</p>
+        <h1>Prenota una consulenza.</h1>
+        <p>Telefono diretto, WhatsApp, o form online. Tre canali, stessa persona dall'altra parte.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-12); align-items: start" class="book-layout">
+          <div>
+            <a href="tel:+390303749123" class="btn btn-primary btn-phone-pulse" style="font-size: 1.25rem; padding: 1.2rem 2rem; width: 100%; justify-content: center; margin-bottom: var(--space-4)">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              030 374 9123
+            </a>
+            <a href="https://wa.me/390303749123" class="btn btn-outline" style="width: 100%; justify-content: center; margin-bottom: var(--space-8); padding: 1rem 2rem">
+              WhatsApp
+            </a>
+
+            <h3 style="margin-bottom: var(--space-3); font-size: 1.1rem">Cosa portare alla prima visita</h3>
+            <ul style="font-size: 0.92rem; color: var(--text-muted); line-height: 1.9">
+              <li>· Tessera sanitaria + documento d'identità</li>
+              <li>· Eventuali radiografie precedenti (anche solo via foto smartphone)</li>
+              <li>· Lista farmaci attualmente in uso</li>
+              <li>· Card della convenzione assicurativa, se applicabile</li>
+            </ul>
+
+            <h3 style="margin: var(--space-8) 0 var(--space-3); font-size: 1.1rem">Tempi medi di risposta</h3>
+            <ul style="font-size: 0.92rem; color: var(--text-muted); line-height: 1.9">
+              <li>· Telefono · risposta diretta in orario d'apertura</li>
+              <li>· WhatsApp · entro 1 ora</li>
+              <li>· Email · entro 4 ore lavorative</li>
+              <li>· Form online · richiamo entro la giornata</li>
+            </ul>
+          </div>
+
+          <form class="book-form">
+            <h3>Form contatti</h3>
+            <p style="font-size: 0.9rem; color: var(--text-muted); margin-top: -0.5rem">Compila e ti richiamiamo entro la giornata.</p>
+            <div class="book-form-group"><label>Nome e cognome *</label><input type="text" required></div>
+            <div class="book-form-group"><label>Email *</label><input type="email" required></div>
+            <div class="book-form-group"><label>Telefono *</label><input type="tel" required></div>
+            <div class="book-form-group">
+              <label>Tipologia richiesta *</label>
+              <div class="book-radios">
+                <label><input type="radio" name="t" checked>Prima visita specialistica</label>
+                <label><input type="radio" name="t">Secondo parere</label>
+                <label><input type="radio" name="t">Continuità di cura</label>
+                <label><input type="radio" name="t">Urgenza</label>
+              </div>
+            </div>
+            <div class="book-form-group">
+              <label>Area clinica</label>
+              <select>
+                <option>Implantologia</option>
+                <option>Chirurgia orale</option>
+                <option>Ortodonzia / Invisalign</option>
+                <option>Endodonzia</option>
+                <option>Parodontologia</option>
+                <option>Pedodonzia (bambini)</option>
+                <option>Conservativa / igiene</option>
+                <option>Smile design / estetica</option>
+                <option>Altro</option>
+              </select>
+            </div>
+            <div class="book-form-group"><label>Descrizione del caso (opzionale)</label><textarea rows="4" placeholder="Sintomatologia, eventuali diagnosi precedenti, urgenza"></textarea></div>
+            <div class="book-form-group">
+              <label style="flex-direction: row; align-items: center; gap: 0.5rem; text-transform: none; letter-spacing: normal; font-size: 0.85rem; color: var(--text-muted)">
+                <input type="checkbox" required style="width: 18px; height: 18px">
+                <span>Ho letto e accetto la <a href="#privacy" style="color: var(--accent)">privacy policy</a> ai sensi del GDPR</span>
+              </label>
+            </div>
+            <button type="submit" class="btn btn-primary">Invia richiesta</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <p class="footer-legal">STUDIO DENTISTICO FERRETTI · VIA TRIUMPLINA 45, BRESCIA · P.IVA 02XXXXX0980 · ALBO BS N. 4567 · DIR. SAN. DR. MARCO FERRETTI</p>
+        <p>© 2026 · Sito demo</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>

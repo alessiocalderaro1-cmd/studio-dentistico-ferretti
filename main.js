@@ -1,22 +1,15 @@
-// Studio Dentistico Ferretti — main.js
-// Vanilla JS minimal: header shrink + form submit
+// Landing showcase — minimal interactions
+// Smooth scroll behavior + variant card preload hint
 
-// Header shrink on scroll
-const header = document.getElementById('header');
-if (header) {
-  window.addEventListener('scroll', () => {
-    header.classList.toggle('header--scrolled', window.scrollY > 50);
-  }, { passive: true });
-}
-
-// Form submit placeholder (da collegare a CF Worker o Brevo)
-const form = document.querySelector('.prenota__form');
-if (form) {
-  form.addEventListener('submit', (e) => {
-    e.preventDefault();
-    const btn = form.querySelector('[type="submit"]');
-    btn.textContent = '✓ Richiesta inviata — ti richiamiamo presto!';
-    btn.disabled = true;
-    btn.style.background = '#0D9488';
+document.addEventListener('DOMContentLoaded', () => {
+  document.querySelectorAll('.variant-card, .extra-card').forEach((card) => {
+    card.addEventListener('mouseenter', () => {
+      const href = card.getAttribute('href');
+      if (!href) return;
+      const link = document.createElement('link');
+      link.rel = 'prefetch';
+      link.href = href;
+      document.head.appendChild(link);
+    }, { once: true });
   });
-}
+});

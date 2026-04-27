@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Studio Ferretti — Cura gentile, risultati veri | Brescia</title>
+  <meta name="description" content="Studio dentistico digitale a Brescia. Calendar online, smile design upload, area pazienti coming. Tecnologia al servizio della cura. Manrope-only design.">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/svg+xml" href="logo.svg">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Dentist",
+    "name": "Studio Dentistico Ferretti",
+    "url": "https://studio-ferretti.example.com/v3-tech/",
+    "telephone": "+39 030 374 9123",
+    "address": { "@type": "PostalAddress", "streetAddress": "Via Triumplina 45", "addressLocality": "Brescia", "postalCode": "25136", "addressCountry": "IT" },
+    "founder": "Dr. Marco Ferretti",
+    "foundingDate": "1998",
+    "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.8", "reviewCount": "247" }
+  }
+  </script>
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="/v3-tech/"><img src="logo.svg" alt="Studio Ferretti" class="logo"></a>
+      <nav class="main-nav">
+        <a href="/v3-tech/" class="is-current">Home</a>
+        <a href="servizi.html">Servizi</a>
+        <a href="team.html">Team</a>
+        <a href="casi-clinici.html">Casi</a>
+        <a href="smile-design.html">Smile design</a>
+        <a href="blog.html">Blog</a>
+        <a href="chi-siamo.html">Studio</a>
+        <a href="contatti.html">Contatti</a>
+      </nav>
+      <div class="header-actions">
+        <a href="tel:+390303749123" class="tel-link">030 374 9123</a>
+        <a href="prenotazione.html" class="btn btn-primary">Prenota online</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow reveal">Studio dentistico digitale · Brescia</p>
+          <h1 class="phase-settle">
+            <span class="w-light">Cura</span>
+            <span class="w-bold">gentile</span><span class="dot"></span><br>
+            <span class="w-light">Risultati</span>
+            <span class="w-bold">veri</span><span class="dot"></span>
+          </h1>
+          <p class="lede reveal">
+            Lo studio dentistico per chi non ha tempo da perdere e vuole risultati duraturi.
+            Prenotazione online, smile design digitale, area pazienti in arrivo. Cura
+            personalizzata, esperienza moderna.
+          </p>
+          <div class="hero-cta reveal">
+            <a href="#prenota" class="btn btn-primary">Prenota in 30 secondi</a>
+            <a href="chi-siamo.html" class="btn btn-ghost">Come lavoriamo</a>
+          </div>
+        </div>
+        <div class="hero-visual reveal">
+          <svg class="smile-arc" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <defs>
+              <radialGradient id="bg-grad" cx="50%" cy="50%" r="50%">
+                <stop offset="0%" stop-color="#c8a8ff" stop-opacity="0.15"/>
+                <stop offset="100%" stop-color="#7feff6" stop-opacity="0"/>
+              </radialGradient>
+            </defs>
+            <circle cx="200" cy="200" r="180" fill="url(#bg-grad)"/>
+            <!-- Arcata superiore -->
+            <g transform="translate(200,200)">
+              <circle class="tooth" cx="-130" cy="20" r="18"/>
+              <circle class="tooth pulse" cx="-100" cy="-30" r="20" style="animation-delay: 0.2s"/>
+              <circle class="tooth" cx="-60" cy="-70" r="22"/>
+              <circle class="tooth pulse" cx="-15" cy="-95" r="22" style="animation-delay: 0.4s"/>
+              <circle class="tooth" cx="35" cy="-95" r="22"/>
+              <circle class="tooth pulse" cx="80" cy="-70" r="22" style="animation-delay: 0.6s"/>
+              <circle class="tooth" cx="120" cy="-30" r="20"/>
+              <circle class="tooth pulse" cx="150" cy="20" r="18" style="animation-delay: 0.8s"/>
+              <!-- Arcata inferiore -->
+              <circle class="tooth" cx="-130" cy="60" r="18"/>
+              <circle class="tooth" cx="-100" cy="110" r="20"/>
+              <circle class="tooth pulse" cx="-60" cy="150" r="22" style="animation-delay: 1s"/>
+              <circle class="tooth" cx="-15" cy="175" r="22"/>
+              <circle class="tooth" cx="35" cy="175" r="22"/>
+              <circle class="tooth pulse" cx="80" cy="150" r="22" style="animation-delay: 1.2s"/>
+              <circle class="tooth" cx="120" cy="110" r="20"/>
+              <circle class="tooth" cx="150" cy="60" r="18"/>
+            </g>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <!-- TRUST STRIP -->
+    <section class="container">
+      <div class="trust-strip">
+        <div class="trust-list">
+          <div class="trust-item"><h4>4,8 / 5</h4><p>247 recensioni Google</p></div>
+          <div class="trust-item"><h4>1.500+</h4><p>impianti inseriti</p></div>
+          <div class="trust-item"><h4>28 anni</h4><p>di pratica clinica</p></div>
+          <div class="trust-item"><h4>5</h4><p>specialisti dedicati</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVIZI tabbed accordion -->
+    <section class="section" id="servizi">
+      <div class="container">
+        <div class="section-header">
+          <p class="eyebrow">Cosa facciamo</p>
+          <h2><span class="w-light">Otto</span> <span class="w-bold">aree cliniche</span><span class="dot" style="background: var(--info)"></span></h2>
+          <p>Click su una categoria per vedere il dettaglio. Ogni area ha un medico responsabile dedicato.</p>
+        </div>
+
+        <div class="services-accordion">
+          <details class="service-row" open>
+            <summary class="service-summary">
+              <div class="service-summary-left">
+                <span class="service-num">/01</span>
+                <span class="service-name">Prevenzione e igiene</span>
+              </div>
+              <span class="service-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+            </summary>
+            <div class="service-detail">
+              <div>
+                <p>Detartrasi ad ultrasuoni, levigatura radicolare, applicazione di fluoro topico. Sedute da 45-60 minuti per consentire una pulizia completa, senza fretta.</p>
+                <p><strong>Igienista dedicata · Sedute 45-60 min · €80-110</strong></p>
+              </div>
+              <div class="service-detail-image"><img src="/shared/images/services/prevenzione.jpg" alt=""></div>
+            </div>
+          </details>
+
+          <details class="service-row">
+            <summary class="service-summary">
+              <div class="service-summary-left">
+                <span class="service-num">/02</span>
+                <span class="service-name">Conservativa</span>
+              </div>
+              <span class="service-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+            </summary>
+            <div class="service-detail">
+              <div><p>Otturazioni in composito nano-ibrido. Tecnica adesiva moderna, isolamento con diga di gomma sempre.</p><p><strong>€100-220 per dente</strong></p></div>
+              <div class="service-detail-image"><img src="/shared/images/services/conservativa.jpg" alt=""></div>
+            </div>
+          </details>
+
+          <details class="service-row">
+            <summary class="service-summary">
+              <div class="service-summary-left"><span class="service-num">/03</span><span class="service-name">Endodonzia</span></div>
+              <span class="service-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+            </summary>
+            <div class="service-detail">
+              <div><p>Trattamento canalare al microscopio operativo Zeiss. Tasso di successo &gt;92%.</p><p><strong>€350-650 · Dr. Luca Bianchi</strong></p></div>
+              <div class="service-detail-image"><img src="/shared/images/services/endodonzia.jpg" alt=""></div>
+            </div>
+          </details>
+
+          <details class="service-row">
+            <summary class="service-summary">
+              <div class="service-summary-left"><span class="service-num">/04</span><span class="service-name">Ortodonzia / Invisalign</span></div>
+              <span class="service-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+            </summary>
+            <div class="service-detail">
+              <div><p>Invisalign certified provider dal 2018, oltre 200 casi trattati. Allineatori trasparenti, ortodonzia fissa, interceptiva pediatrica.</p><p><strong>€2.500-5.500 · Dr.ssa Chiara Ferretti</strong></p></div>
+              <div class="service-detail-image"><img src="/shared/images/services/ortodonzia.jpg" alt=""></div>
+            </div>
+          </details>
+
+          <details class="service-row">
+            <summary class="service-summary">
+              <div class="service-summary-left"><span class="service-num">/05</span><span class="service-name">Implantologia</span></div>
+              <span class="service-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+            </summary>
+            <div class="service-detail">
+              <div><p>Pianificazione 3D con CBCT, dima chirurgica computer-guidata. Impianti delle migliori marche europee.</p><p><strong>€1.200-2.500 singolo · €7.000-12.000 all-on-4</strong></p></div>
+              <div class="service-detail-image"><img src="/shared/images/services/implantologia.jpg" alt=""></div>
+            </div>
+          </details>
+
+          <details class="service-row">
+            <summary class="service-summary">
+              <div class="service-summary-left"><span class="service-num">/06</span><span class="service-name">Chirurgia orale</span></div>
+              <span class="service-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+            </summary>
+            <div class="service-detail">
+              <div><p>Estrazioni semplici e complesse, denti del giudizio inclusi. Sedazione cosciente disponibile.</p><p><strong>€80-480 · Sedazione +€150</strong></p></div>
+              <div class="service-detail-image"><img src="/shared/images/services/chirurgia.jpg" alt=""></div>
+            </div>
+          </details>
+
+          <details class="service-row">
+            <summary class="service-summary">
+              <div class="service-summary-left"><span class="service-num">/07</span><span class="service-name">Parodontologia</span></div>
+              <span class="service-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+            </summary>
+            <div class="service-detail">
+              <div><p>Diagnosi parodontale completa, terapia causale, mantenimento periodico.</p><p><strong>€60-250 · Dr. Andrea Greco · Univ. Berna</strong></p></div>
+              <div class="service-detail-image"><img src="/shared/images/services/parodontologia.jpg" alt=""></div>
+            </div>
+          </details>
+
+          <details class="service-row">
+            <summary class="service-summary">
+              <div class="service-summary-left"><span class="service-num">/08</span><span class="service-name">Pedodonzia</span></div>
+              <span class="service-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+            </summary>
+            <div class="service-detail">
+              <div><p>Lavora esclusivamente con i bambini, dai 12 mesi all'adolescenza. Approccio tell-show-do.</p><p><strong>Prima visita gratuita · Dr.ssa Sofia Romano</strong></p></div>
+              <div class="service-detail-image"><img src="/shared/images/services/pedodonzia.jpg" alt=""></div>
+            </div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- TEAM -->
+    <section class="section" style="background: var(--surface)">
+      <div class="container">
+        <div class="section-header">
+          <p class="eyebrow">Le persone</p>
+          <h2><span class="w-light">Cinque medici.</span> <span class="w-bold">Una squadra.</span></h2>
+          <p>Hover sulle foto per vedere il colore. Ognuno con il proprio ambito di specializzazione.</p>
+        </div>
+
+        <div class="team-director">
+          <div class="team-director-image"><img src="/shared/images/team/dr-marco-ferretti.jpg" alt="Dr. Marco Ferretti"></div>
+          <div class="team-director-info">
+            <p class="eyebrow">Direttore sanitario</p>
+            <h3>Dr. Marco Ferretti</h3>
+            <p class="role">Implantologia · Chirurgia orale</p>
+            <p class="bio">Fondatore dello studio nel 1998. 28 anni di pratica clinica, oltre 1.500 interventi implantologici eseguiti. Membro SICOI, AIOP. Frequenta congressi internazionali ogni anno.</p>
+            <a href="team.html" class="btn btn-ghost">Bio completa</a>
+          </div>
+        </div>
+
+        <div class="team-grid">
+          <article class="team-card">
+            <div class="team-card-image"><img src="/shared/images/team/dr-chiara-ferretti.jpg" alt=""></div>
+            <div class="team-card-info"><h4>Dr.ssa C. Ferretti</h4><p>Ortodonzia · Invisalign</p></div>
+          </article>
+          <article class="team-card">
+            <div class="team-card-image"><img src="/shared/images/team/dr-luca-bianchi.jpg" alt=""></div>
+            <div class="team-card-info"><h4>Dr. L. Bianchi</h4><p>Endodonzia · Conservativa</p></div>
+          </article>
+          <article class="team-card">
+            <div class="team-card-image"><img src="/shared/images/team/dr-sofia-romano.jpg" alt=""></div>
+            <div class="team-card-info"><h4>Dr.ssa S. Romano</h4><p>Pedodonzia</p></div>
+          </article>
+          <article class="team-card">
+            <div class="team-card-image"><img src="/shared/images/team/dr-andrea-greco.jpg" alt=""></div>
+            <div class="team-card-info"><h4>Dr. A. Greco</h4><p>Parodontologia</p></div>
+          </article>
+        </div>
+
+        <div class="team-staff">
+          <div class="staff-mini"><img src="/shared/images/team/elena-ricci.jpg" alt=""><h5>Elena Ricci</h5><p>Igienista</p></div>
+          <div class="staff-mini"><img src="/shared/images/team/martina-gatti.jpg" alt=""><h5>Martina Gatti</h5><p>Igienista · sbiancamento</p></div>
+          <div class="staff-mini"><img src="/shared/images/team/giulia-conti.jpg" alt=""><h5>Giulia Conti</h5><p>Assistente</p></div>
+          <div class="staff-mini"><img src="/shared/images/team/roberto-marchi.jpg" alt=""><h5>Roberto Marchi</h5><p>Assistente</p></div>
+          <div class="staff-mini"><img src="/shared/images/team/anna-lombardi.jpg" alt=""><h5>Anna Lombardi</h5><p>Segreteria</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TECNOLOGIE -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <p class="eyebrow">Strumenti</p>
+          <h2><span class="w-light">Tecnologie</span> <span class="w-bold">che fanno la differenza</span><span class="dot" style="background: var(--success)"></span></h2>
+        </div>
+        <div class="tech-grid">
+          <div class="tech-item"><svg class="tech-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 3v18"/></svg><h4>Scanner 3Shape Trios 5</h4><p>Impronte digitali in 60 secondi</p></div>
+          <div class="tech-item"><svg class="tech-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3v18"/></svg><h4>CBCT 3D Carestream</h4><p>Pianificazione implantare guidata</p></div>
+          <div class="tech-item"><svg class="tech-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="3"/><circle cx="12" cy="12" r="9"/></svg><h4>Microscopio Zeiss</h4><p>Endodonzia con visione 25x</p></div>
+          <div class="tech-item"><svg class="tech-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2 4 6v12l8 4 8-4V6z"/></svg><h4>CAD/CAM in studio</h4><p>Corone in giornata</p></div>
+          <div class="tech-item"><svg class="tech-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2v20M5 8c0-4 7-4 7 0s7 4 7 0"/></svg><h4>Sedazione cosciente</h4><p>N₂O / O₂ per pazienti ansiosi</p></div>
+          <div class="tech-item"><svg class="tech-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 12c0-5 4-9 9-9s9 4 9 9-4 9-9 9-9-4-9-9zM12 7v5l3 3"/></svg><h4>Sterilizzazione classe B</h4><p>EN 13060 ospedaliero</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CASI CLINICI -->
+    <section class="section" style="background: var(--surface)">
+      <div class="container">
+        <div class="section-header">
+          <p class="eyebrow">Documentazione</p>
+          <h2><span class="w-light">Casi</span> <span class="w-bold">prima e dopo</span></h2>
+        </div>
+        <div class="cases-grid">
+          <article class="case-item">
+            <div class="ba-slider" data-before="/shared/images/before-after/case-1-before.jpg" data-after="/shared/images/before-after/case-1-after.jpg" data-label-before="Prima" data-label-after="Dopo"></div>
+            <div class="case-meta"><h4>Implantologia full-arch</h4><p>F., 58 anni · 6 impianti + protesi · 5 mesi</p></div>
+          </article>
+          <article class="case-item">
+            <div class="ba-slider" data-before="/shared/images/before-after/case-2-before.jpg" data-after="/shared/images/before-after/case-2-after.jpg" data-label-before="Prima" data-label-after="Dopo"></div>
+            <div class="case-meta"><h4>Faccette ceramica</h4><p>M., 41 anni · 8 faccette + ritocco gengivale</p></div>
+          </article>
+          <article class="case-item">
+            <div class="ba-slider" data-before="/shared/images/before-after/case-3-before.jpg" data-after="/shared/images/before-after/case-3-after.jpg" data-label-before="Prima" data-label-after="Dopo"></div>
+            <div class="case-meta"><h4>Invisalign adulti</h4><p>F., 34 anni · affollamento moderato · 14 mesi</p></div>
+          </article>
+          <article class="case-item">
+            <div class="ba-slider" data-before="/shared/images/before-after/case-4-before.jpg" data-after="/shared/images/before-after/case-4-after.jpg" data-label-before="Prima" data-label-after="Dopo"></div>
+            <div class="case-meta"><h4>Sbiancamento professionale</h4><p>F., 29 anni · seduta singola + mantenimento</p></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SMILE DESIGN -->
+    <section class="section" id="smile-design">
+      <div class="container">
+        <div class="section-header">
+          <p class="eyebrow">Lead-gen digitale</p>
+          <h2><span class="w-light">Smile Design.</span> <span class="w-bold">In 48 ore.</span></h2>
+          <p>Carica un selfie sorridente e ricevi una proiezione personalizzata. Servizio gratuito, GDPR-compliant.</p>
+        </div>
+        <div class="smile-grid">
+          <div>
+            <h4 style="margin-bottom: var(--space-4)">Come funziona</h4>
+            <ol style="list-style: decimal; padding-left: 1.5rem; margin-bottom: var(--space-6); color: var(--text-muted); line-height: 2">
+              <li>Carichi una foto frontale a sorriso aperto</li>
+              <li>Il nostro team analizza e prepara la proiezione</li>
+              <li>Ricevi tutto via email entro 48h, con commento clinico</li>
+            </ol>
+            <p style="background: var(--surface); border-radius: var(--radius-md); padding: var(--space-4); font-size: 0.88rem; color: var(--text-muted)"><strong style="color: var(--text)">Privacy</strong> · La foto è visibile solo dal team clinico, viene cancellata entro 30 giorni.</p>
+          </div>
+          <div class="smile-upload" data-overlay="ideal"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CALENDAR INLINE PRENOTAZIONE -->
+    <section class="section" id="prenota" style="background: var(--surface)">
+      <div class="container">
+        <div class="section-header">
+          <p class="eyebrow">Prenotazione online</p>
+          <h2><span class="w-light">Prenota</span> <span class="w-bold">in 30 secondi</span><span class="dot"></span></h2>
+          <p>Calendar inline. Scegli giorno e ora, ti confermiamo via email.</p>
+        </div>
+
+        <div class="calendar-mock" style="max-width: 720px; margin: 0 auto">
+          <div class="calendar-header">
+            <button style="background: none; border: none; cursor: pointer; font-size: 1rem; color: var(--text-muted)">←</button>
+            <span class="calendar-month">Aprile 2026</span>
+            <button style="background: none; border: none; cursor: pointer; font-size: 1rem; color: var(--text-muted)">→</button>
+          </div>
+          <div class="calendar-grid">
+            <div class="calendar-day-name">L</div><div class="calendar-day-name">M</div><div class="calendar-day-name">M</div><div class="calendar-day-name">G</div><div class="calendar-day-name">V</div><div class="calendar-day-name">S</div><div class="calendar-day-name">D</div>
+            <div class="calendar-day is-disabled">31</div><div class="calendar-day has-availability">1</div><div class="calendar-day has-availability">2</div><div class="calendar-day has-availability">3</div><div class="calendar-day has-availability">4</div><div class="calendar-day has-availability">5</div><div class="calendar-day is-disabled">6</div>
+            <div class="calendar-day has-availability">7</div><div class="calendar-day has-availability">8</div><div class="calendar-day has-availability">9</div><div class="calendar-day has-availability">10</div><div class="calendar-day has-availability">11</div><div class="calendar-day has-availability">12</div><div class="calendar-day is-disabled">13</div>
+            <div class="calendar-day has-availability">14</div><div class="calendar-day has-availability">15</div><div class="calendar-day has-availability">16</div><div class="calendar-day has-availability">17</div><div class="calendar-day has-availability">18</div><div class="calendar-day has-availability">19</div><div class="calendar-day is-disabled">20</div>
+            <div class="calendar-day has-availability">21</div><div class="calendar-day has-availability">22</div><div class="calendar-day has-availability">23</div><div class="calendar-day has-availability">24</div><div class="calendar-day has-availability">25</div><div class="calendar-day has-availability">26</div><div class="calendar-day is-today">27</div>
+            <div class="calendar-day has-availability">28</div><div class="calendar-day has-availability">29</div><div class="calendar-day has-availability">30</div><div class="calendar-day is-disabled">1</div><div class="calendar-day is-disabled">2</div><div class="calendar-day is-disabled">3</div><div class="calendar-day is-disabled">4</div>
+          </div>
+          <div class="calendar-slots">
+            <div class="slot">09:00</div><div class="slot is-booked">09:30</div><div class="slot">10:00</div><div class="slot">10:30</div>
+            <div class="slot">14:00</div><div class="slot">14:30</div><div class="slot is-booked">15:00</div><div class="slot">15:30</div>
+            <div class="slot">16:00</div><div class="slot">16:30</div><div class="slot">17:00</div><div class="slot is-booked">17:30</div>
+          </div>
+          <p style="text-align: center; margin-top: var(--space-6); font-size: 0.85rem; color: var(--text-muted)">
+            Powered by <strong style="color: var(--accent-deep)">Cal.com</strong> · Conferma immediata via email
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- RECENSIONI -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <p class="eyebrow">Recensioni Google</p>
+          <h2><span class="w-light">4,8 / 5</span> <span class="w-bold">su 247 recensioni</span></h2>
+        </div>
+        <div class="reviews-grid">
+          <div class="review-card"><div class="review-stars">★★★★★</div><p>"Studio bellissimo, dottori molto preparati. Mio figlio ha 6 anni e adora la Dr.ssa Romano."</p><p class="review-author">Sara M. · 2 mesi fa</p></div>
+          <div class="review-card"><div class="review-stars">★★★★★</div><p>"Lavoro impeccabile sui due impianti. Il Dr. Ferretti spiega tutto in modo chiaro, niente sorprese."</p><p class="review-author">Andrea P. · 3 settimane fa</p></div>
+          <div class="review-card"><div class="review-stars">★★★★★</div><p>"Trattamento Invisalign con la Dr.ssa Chiara Ferretti. Risultato perfetto, controlli puntuali, atmosfera rilassata."</p><p class="review-author">Cristina B. · 1 mese fa</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BLOG -->
+    <section class="section" style="background: var(--surface)">
+      <div class="container">
+        <div class="section-header">
+          <p class="eyebrow">Blog</p>
+          <h2><span class="w-light">Approfondimenti</span> <span class="w-bold">utili</span></h2>
+        </div>
+        <div class="blog-grid">
+          <a href="blog/impianti-vs-protesi-mobile.html" class="blog-card">
+            <div class="blog-image"><img src="/shared/images/blog/impianti-protesi.jpg" alt=""></div>
+            <div class="blog-content">
+              <span class="blog-tag">Implantologia</span>
+              <h4>Impianti dentali o protesi mobile</h4>
+              <p class="blog-excerpt">Confronto tecnico onesto tra le due principali soluzioni protesiche.</p>
+              <div class="blog-meta"><span>Dr. Ferretti</span><span>7 min</span></div>
+            </div>
+          </a>
+          <a href="blog/apparecchi-invisibili-adulti.html" class="blog-card">
+            <div class="blog-image"><img src="/shared/images/blog/invisalign.jpg" alt=""></div>
+            <div class="blog-content">
+              <span class="blog-tag">Ortodonzia</span>
+              <h4>Apparecchi invisibili: chi può usarli</h4>
+              <p class="blog-excerpt">Indicazioni, controindicazioni, condizioni per la riuscita.</p>
+              <div class="blog-meta"><span>Dr.ssa C. Ferretti</span><span>8 min</span></div>
+            </div>
+          </a>
+          <a href="blog/sbiancamento-pro-vs-casalingo.html" class="blog-card">
+            <div class="blog-image"><img src="/shared/images/blog/sbiancamento.jpg" alt=""></div>
+            <div class="blog-content">
+              <span class="blog-tag">Estetica</span>
+              <h4>Sbiancamento: pro o casalingo?</h4>
+              <p class="blog-excerpt">Cosa funziona davvero, cosa rischia di danneggiare lo smalto.</p>
+              <div class="blog-meta"><span>Martina Gatti</span><span>6 min</span></div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- TOUR 360 -->
+    <section class="tour-cta-section">
+      <div class="container">
+        <p class="eyebrow">Visita virtuale</p>
+        <h2><span class="w-light">Conoscici</span> <span class="w-bold">prima di venirci</span></h2>
+        <p>Tour 360° navigabile dello studio. Ingresso, sala d'attesa, riunito, sala chirurgica.</p>
+        <a href="/tour-360/?theme=v3" class="btn btn-primary">Apri il tour 360°</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <img src="logo.svg" alt="Studio Ferretti" class="footer-brand" style="height: 50px">
+          <p style="margin-top: var(--space-4); color: var(--text-muted); font-size: 0.9rem">Via Triumplina 45<br>25136 Brescia (BS)</p>
+          <p style="margin-top: var(--space-3); font-size: 0.9rem"><a href="tel:+390303749123">030 374 9123</a><br><a href="mailto:info@studioferretti.it" style="color: var(--accent-deep)">info@studioferretti.it</a></p>
+        </div>
+        <div class="footer-col">
+          <h5>Servizi</h5>
+          <ul><li><a href="servizi.html#implantologia">Implantologia</a></li><li><a href="servizi.html#ortodonzia">Ortodonzia</a></li><li><a href="servizi.html#pedodonzia">Pedodonzia</a></li><li><a href="smile-design.html">Smile design</a></li></ul>
+        </div>
+        <div class="footer-col">
+          <h5>Studio</h5>
+          <ul><li><a href="chi-siamo.html">Chi siamo</a></li><li><a href="team.html">Team</a></li><li><a href="blog.html">Blog</a></li><li><a href="/tour-360/?theme=v3">Tour 360°</a></li></ul>
+        </div>
+        <div class="footer-col">
+          <h5>Apertura</h5>
+          <ul><li>Lun-Ven · 9-19</li><li>Sabato · 9-13</li><li>Domenica chiuso</li></ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-legal">P.IVA 02XXXXX0980 · Albo BS n. 4567 · Direttore sanitario: Dr. Marco Ferretti</p>
+        <p>© 2026 · Sito demo per portfolio</p>
+      </div>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/390303749123" class="whatsapp-float" aria-label="WhatsApp">
+    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+  </a>
+
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.0.42/dist/lenis.min.js" defer></script>
+  <script src="/shared/js/reveal-on-scroll.js" defer></script>
+  <script src="/shared/js/before-after-slider.js" defer></script>
+  <script src="/shared/js/smile-upload.js" defer></script>
+  <script src="script.js" defer></script>
+</body>
+</html>

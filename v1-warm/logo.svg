@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 56" role="img" aria-label="Studio Ferretti">
+  <defs>
+    <style>
+      .logo-serif { font-family: 'Playfair Display', Georgia, serif; font-style: italic; font-weight: 700; }
+    </style>
+  </defs>
+  <text x="0" y="38" class="logo-serif" font-size="28" fill="#2a2622">Studio</text>
+  <text x="84" y="38" class="logo-serif" font-size="28" fill="#d97548">Ferretti</text>
+  <path d="M 84 44 Q 130 50 184 44" stroke="#d97548" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,52 @@
+{
+  "articles": [
+    {
+      "slug": "prevenzione-carie-bambini",
+      "title": "Come prevenire la carie nei bambini: la guida pratica per i genitori",
+      "excerpt": "Igiene quotidiana, alimentazione e visite di controllo: tre leve semplici per evitare la carie nei piccoli pazienti, con i consigli del nostro reparto di pedodonzia.",
+      "author": "Dr.ssa Sofia Romano",
+      "authorRole": "Specialista in Pedodonzia",
+      "date": "2026-04-10",
+      "readTime": 5,
+      "tag": "Pedodonzia",
+      "image": "/shared/images/blog/carie-bambini.jpg",
+      "imageAlt": "Bambino sorridente durante una visita dal dentista"
+    },
+    {
+      "slug": "impianti-vs-protesi-mobile",
+      "title": "Impianti dentali o protesi mobile: come scegliere senza errori",
+      "excerpt": "Costi, durata, comfort, manutenzione: confronto onesto tra le due principali soluzioni per riabilitare un sorriso compromesso, con criteri concreti per decidere.",
+      "author": "Dr. Marco Ferretti",
+      "authorRole": "Direttore Sanitario, Implantologia",
+      "date": "2026-03-22",
+      "readTime": 7,
+      "tag": "Implantologia",
+      "image": "/shared/images/blog/impianti-protesi.jpg",
+      "imageAlt": "Modello di impianto dentale a confronto con protesi mobile"
+    },
+    {
+      "slug": "sbiancamento-pro-vs-casalingo",
+      "title": "Sbiancamento dentale: professionale o casalingo? La verità (con prove)",
+      "excerpt": "Cosa funziona davvero, cosa rischia di danneggiare lo smalto, e quando lo sbiancamento è sconsigliato. La risposta scientifica, senza scorciatoie pubblicitarie.",
+      "author": "Martina Gatti",
+      "authorRole": "Igienista Dentale",
+      "date": "2026-03-08",
+      "readTime": 6,
+      "tag": "Estetica",
+      "image": "/shared/images/blog/sbiancamento.jpg",
+      "imageAlt": "Confronto tra sbiancamento dentale professionale e casalingo"
+    },
+    {
+      "slug": "apparecchi-invisibili-adulti",
+      "title": "Apparecchi invisibili: chi può usarli davvero (e chi no)",
+      "excerpt": "Invisalign e allineatori trasparenti hanno cambiato l'ortodonzia per gli adulti, ma non sono adatti a tutti. Ecco quando funzionano e quando serve un approccio diverso.",
+      "author": "Dr.ssa Chiara Ferretti",
+      "authorRole": "Specialista in Ortodonzia, Invisalign certified",
+      "date": "2026-02-18",
+      "readTime": 8,
+      "tag": "Ortodonzia",
+      "image": "/shared/images/blog/invisalign.jpg",
+      "imageAlt": "Allineatore trasparente Invisalign appoggiato su superficie chiara"
+    }
+  ]
+}

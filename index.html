@@ -3,396 +3,201 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Studio Dentistico Ferretti — Brescia</title>
-  <meta name="description" content="Studio dentistico a Brescia. Cure odontoiatriche per tutta la famiglia, implantologia, ortodonzia e sbiancamento. Prenota online.">
-
-  <!-- Self-hosted font via Bunny Fonts (no GDPR issues) -->
-  <link rel="preconnect" href="https://fonts.bunny.net">
-  <link href="https://fonts.bunny.net/css?family=fraunces:400,600,700|inter:400,500,600" rel="stylesheet">
-
+  <title>Studio Ferretti — Case study di design exploration · Alessio Calderaro</title>
+  <meta name="description" content="Case study di portfolio: il sito di uno studio dentistico ipotetico declinato in 4 letture visive radicalmente diverse. Dentologie warm, SI Oral Surgery medical, WorldOfNRG tech, Prototype Studio luxury.">
+  <meta name="robots" content="noindex,nofollow">
   <link rel="stylesheet" href="style.css">
-
-  <!-- Schema.org LocalBusiness + Dentist -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Dentist",
-    "name": "Studio Dentistico Ferretti",
-    "description": "Studio dentistico a Brescia specializzato in implantologia, ortodonzia e cure conservative per tutta la famiglia.",
-    "url": "https://studiodenttisticoferretti.it",
-    "telephone": "+39 030 123 4567",
-    "email": "info@studiodenttisticoferretti.it",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "Via Triumplina 45",
-      "addressLocality": "Brescia",
-      "postalCode": "25136",
-      "addressRegion": "BS",
-      "addressCountry": "IT"
-    },
-    "geo": {
-      "@type": "GeoCoordinates",
-      "latitude": 45.5416,
-      "longitude": 10.2118
-    },
-    "openingHoursSpecification": [
-      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "09:00", "closes": "19:00" },
-      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "09:00", "closes": "13:00" }
-    ],
-    "aggregateRating": {
-      "@type": "AggregateRating",
-      "ratingValue": "4.9",
-      "reviewCount": "127",
-      "bestRating": "5"
-    },
-    "medicalSpecialty": ["Dentistry", "Orthodontics", "Implantology"],
-    "priceRange": "€€"
-  }
-  </script>
 </head>
 <body>
-
-  <!-- SKIP LINK accessibilità -->
-  <a class="skip-link" href="#main">Vai al contenuto principale</a>
-
-  <!-- DEMO BADGE — rimuovere su sito cliente reale -->
-  <div style="background:#1E3A8A;color:#fff;text-align:center;padding:8px;font-size:13px;font-family:sans-serif;">
-    ⚠️ Sito dimostrativo — brand fittizio creato a scopo portfolio
-  </div>
-
-  <!-- HEADER -->
-  <header class="header" id="header">
-    <div class="container header__inner">
-      <a href="/" class="logo" aria-label="Studio Dentistico Ferretti — Homepage">
-        <span class="logo__icon" aria-hidden="true">✦</span>
-        <span class="logo__text">Studio Dentistico <strong>Ferretti</strong></span>
-      </a>
-      <nav class="nav" aria-label="Navigazione principale">
-        <ul class="nav__list">
-          <li><a href="#servizi" class="nav__link">Servizi</a></li>
-          <li><a href="#chi-siamo" class="nav__link">Chi siamo</a></li>
-          <li><a href="#recensioni" class="nav__link">Recensioni</a></li>
-          <li><a href="#faq" class="nav__link">FAQ</a></li>
-        </ul>
-      </nav>
-      <a href="#prenota" class="btn btn--primary btn--sm header__cta">Prenota visita</a>
-    </div>
+  <header class="site-header">
+    <a href="/" class="brand">Alessio Calderaro · case study</a>
+    <nav class="site-nav">
+      <a href="#varianti">Le varianti</a>
+      <a href="#brief">Il brief</a>
+      <a href="#about">Metodo</a>
+    </nav>
   </header>
 
-  <main id="main">
-
-    <!-- HERO -->
+  <main>
     <section class="hero">
-      <div class="container hero__inner">
-        <div class="hero__content">
-          <div class="hero__badge">
-            <span>⭐ 4,9/5 su Google · 127 recensioni</span>
-          </div>
-          <h1 class="hero__title">
-            Il sorriso che hai sempre<br>
-            <em>voluto avere</em>
-          </h1>
-          <p class="hero__sub">
-            Studio dentistico a Brescia dal 1998. Cure conservative, implantologia e ortodonzia per tutta la famiglia — in un ambiente moderno e senza ansia.
-          </p>
-          <div class="hero__ctas">
-            <a href="#prenota" class="btn btn--primary btn--lg">Prenota una visita</a>
-            <a href="tel:+390301234567" class="btn btn--ghost btn--lg">
-              <span aria-hidden="true">📞</span> 030 123 4567
-            </a>
-          </div>
-          <div class="hero__trust">
-            <span class="trust-pill">✔ Convenzionato SSN</span>
-            <span class="trust-pill">✔ Iscritto Albo FNOMCEO</span>
-            <span class="trust-pill">✔ Prima visita gratuita</span>
-          </div>
-        </div>
-        <div class="hero__image-wrap" aria-hidden="true">
-          <div class="hero__image-placeholder">
-            <span>Foto studio / Dr. Ferretti</span>
-          </div>
-        </div>
-      </div>
+      <p class="eyebrow">Case study di portfolio</p>
+      <h1>Studio Dentistico Ferretti<br><em>quattro letture di design</em>.</h1>
+      <p class="lede">
+        Lo stesso brief — uno studio dentistico ipotetico a Brescia, con 10 persone, 8 servizi e un brand
+        compliance italiano — declinato in 4 sistemi visivi radicalmente diversi. Stessa architettura
+        informativa, motion e palette completamente differenti. Più un tour 360° della clinica condiviso.
+      </p>
+      <p class="lede-sub">
+        I design system attingono a 4 estrazioni reali fatte con <code>skillui</code>:
+        <strong>Dentologie</strong>, <strong>Staten Island Oral Surgery</strong>, <strong>WorldOfNRG</strong>, <strong>Prototype Studio</strong>.
+      </p>
+      <a class="hero-cta" href="#varianti">Esplora le 4 varianti ↓</a>
     </section>
 
-    <!-- TRUST BAR -->
-    <section class="trust-bar" aria-label="Numeri dello studio">
-      <div class="container trust-bar__grid">
-        <div class="trust-bar__item">
-          <strong>+2.400</strong>
-          <span>pazienti seguiti</span>
-        </div>
-        <div class="trust-bar__item">
-          <strong>26 anni</strong>
-          <span>di esperienza</span>
-        </div>
-        <div class="trust-bar__item">
-          <strong>4,9 ★</strong>
-          <span>su Google Maps</span>
-        </div>
-        <div class="trust-bar__item">
-          <strong>3 dentisti</strong>
-          <span>specializzati</span>
-        </div>
-      </div>
-    </section>
+    <section id="varianti" class="variants">
+      <h2 class="section-title">Le quattro varianti</h2>
+      <div class="variants-grid">
 
-    <!-- SERVIZI -->
-    <section class="servizi" id="servizi">
-      <div class="container">
-        <div class="section-header">
-          <h2>I nostri servizi</h2>
-          <p>Tutto quello che serve alla salute del tuo sorriso, in un unico posto.</p>
-        </div>
-        <div class="servizi__grid">
-
-          <article class="servizio-card">
-            <div class="servizio-card__icon" aria-hidden="true">🦷</div>
-            <h3>Cure conservative</h3>
-            <p>Otturazioni, devitalizzazioni e trattamenti canalari con strumentazione digitale di ultima generazione.</p>
-            <a href="#prenota" class="link-arrow">Prenota →</a>
-          </article>
-
-          <article class="servizio-card">
-            <div class="servizio-card__icon" aria-hidden="true">🔩</div>
-            <h3>Implantologia</h3>
-            <p>Impianti in titanio a carico immediato. Recupera la funzionalità e l'estetica in tempi brevi.</p>
-            <a href="#prenota" class="link-arrow">Prenota →</a>
-          </article>
-
-          <article class="servizio-card">
-            <div class="servizio-card__icon" aria-hidden="true">😁</div>
-            <h3>Ortodonzia</h3>
-            <p>Apparecchi fissi, rimovibili e allineatori trasparenti (Invisalign) per adulti e bambini.</p>
-            <a href="#prenota" class="link-arrow">Prenota →</a>
-          </article>
-
-          <article class="servizio-card">
-            <div class="servizio-card__icon" aria-hidden="true">✨</div>
-            <h3>Sbiancamento</h3>
-            <p>Trattamento professionale in studio o kit domiciliare. Risultati visibili già dalla prima seduta.</p>
-            <a href="#prenota" class="link-arrow">Prenota →</a>
-          </article>
-
-          <article class="servizio-card">
-            <div class="servizio-card__icon" aria-hidden="true">🧒</div>
-            <h3>Odontoiatria pediatrica</h3>
-            <p>Visite e trattamenti pensati per i più piccoli, in un ambiente accogliente e senza paura.</p>
-            <a href="#prenota" class="link-arrow">Prenota →</a>
-          </article>
-
-          <article class="servizio-card">
-            <div class="servizio-card__icon" aria-hidden="true">🩺</div>
-            <h3>Igiene e prevenzione</h3>
-            <p>Igienizzazione professionale, sbiancamento, ablazione del tartaro e piano di prevenzione annuale.</p>
-            <a href="#prenota" class="link-arrow">Prenota →</a>
-          </article>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- CHI SIAMO -->
-    <section class="chi-siamo" id="chi-siamo">
-      <div class="container chi-siamo__inner">
-        <div class="chi-siamo__image-wrap" aria-hidden="true">
-          <div class="chi-siamo__image-placeholder">
-            Foto Dr. Ferretti / team
-          </div>
-        </div>
-        <div class="chi-siamo__content">
-          <span class="eyebrow">Il tuo dentista di fiducia</span>
-          <h2>Dr. Marco Ferretti</h2>
-          <p class="chi-siamo__credentials">
-            <strong>Specializzazione in Implantologia · Università degli Studi di Brescia</strong>
-          </p>
-          <p>
-            Laureato in Odontoiatria e Protesi Dentaria presso l'Università di Brescia, il Dr. Ferretti ha fondato lo studio nel 1998 con un obiettivo chiaro: offrire cure di alto livello in un ambiente dove il paziente si senta a proprio agio.
-          </p>
-          <p>
-            Iscritto all'Ordine dei Medici e Odontoiatri di Brescia (FNOMCEO), aggiorna costantemente le proprie competenze con corsi ECM certificati.
-          </p>
-          <div class="chi-siamo__badges">
-            <div class="badge">
-              <strong>Iscrizione Albo</strong>
-              <span>OMCeO Brescia n. 4821</span>
+        <a class="variant-card variant-v1" href="/v1-warm/">
+          <div class="variant-preview">
+            <div class="preview-bg" style="background:#f5f3f0"></div>
+            <div class="preview-text">
+              <span class="preview-eyebrow" style="color:#70665c">v1 · warm</span>
+              <span class="preview-title" style="font-family:Georgia,serif;font-style:italic;color:#2a2622">Una <em>cura</em><br>migliore.</span>
+              <span class="preview-cta" style="background:#d97548;color:#fff">Prenota la visita</span>
             </div>
-            <div class="badge">
-              <strong>Convenzionato</strong>
-              <span>Servizio Sanitario Nazionale</span>
+            <div class="preview-swatches">
+              <span style="background:#f5f3f0"></span>
+              <span style="background:#2a2622"></span>
+              <span style="background:#d97548"></span>
+              <span style="background:#a3d9c8"></span>
             </div>
           </div>
+          <div class="variant-meta">
+            <h3>V1 — Studio Caldo</h3>
+            <p class="variant-tag">Dentologie · warm-editorial · family-lifestyle</p>
+            <p class="variant-desc">Crema warm, terracotta soft, Playfair italic + Inter. Tono anti-clinico, foto editoriali, "storie di sorrisi".</p>
+          </div>
+        </a>
+
+        <a class="variant-card variant-v2" href="/v2-medical/">
+          <div class="variant-preview">
+            <div class="preview-bg" style="background:#0d1117"></div>
+            <div class="preview-text">
+              <span class="preview-eyebrow" style="color:#8B95A3">v2 · medical</span>
+              <span class="preview-title" style="font-family:'Helvetica Neue',sans-serif;font-weight:600;color:#fff">Specialisti.<br>Esperienza.</span>
+              <span class="preview-cta" style="background:#5591B7;color:#fff">Chiama ora</span>
+            </div>
+            <div class="preview-swatches">
+              <span style="background:#0d1117;border:1px solid #333"></span>
+              <span style="background:#15202B"></span>
+              <span style="background:#5591B7"></span>
+              <span style="background:#fff"></span>
+            </div>
+          </div>
+          <div class="variant-meta">
+            <h3>V2 — Ambulatorio Autorevole</h3>
+            <p class="variant-tag">SI Oral Surgery · dark-medical · conversion-first</p>
+            <p class="variant-desc">Dark off-black, medical blue, DM Sans + Nunito. Telefono prominente, doctor card grid, casi clinici.</p>
+          </div>
+        </a>
+
+        <a class="variant-card variant-v3" href="/v3-tech/">
+          <div class="variant-preview">
+            <div class="preview-bg" style="background:#fff"></div>
+            <div class="preview-text">
+              <span class="preview-eyebrow" style="color:#5a4f5a">v3 · tech</span>
+              <span class="preview-title" style="font-family:system-ui,sans-serif;color:#261d26"><span style="font-weight:200">Cura</span> <span style="font-weight:800">gentile</span><span style="font-weight:200">.</span></span>
+              <span class="preview-cta" style="background:#c8a8ff;color:#261d26">Prenota in 30s</span>
+            </div>
+            <div class="preview-swatches">
+              <span style="background:#fff;border:1px solid #443944"></span>
+              <span style="background:#f6f7f3"></span>
+              <span style="background:#c8a8ff"></span>
+              <span style="background:#7feff6"></span>
+            </div>
+          </div>
+          <div class="variant-meta">
+            <h3>V3 — Studio del Futuro</h3>
+            <p class="variant-tag">WorldOfNRG · light-cool · digital-first</p>
+            <p class="variant-desc">Bianco + lavanda + ciano, Manrope mono-family weight-coded. Calendar inline, smile preview canvas.</p>
+          </div>
+        </a>
+
+        <a class="variant-card variant-v4" href="/v4-atelier/">
+          <div class="variant-preview">
+            <div class="preview-bg" style="background:#0a0a0a"></div>
+            <div class="preview-text">
+              <span class="preview-eyebrow" style="color:#9aa3b1">v4 · atelier</span>
+              <span class="preview-title" style="font-family:Georgia,serif;font-style:italic;color:#fafafa">ATELIER<br><em style="color:#C9A87C">del</em> SORRISO</span>
+              <span class="preview-cta" style="color:#C9A87C;background:transparent;border:1px solid #C9A87C">Inizia il dialogo →</span>
+            </div>
+            <div class="preview-swatches">
+              <span style="background:#0a0a0a;border:1px solid #333"></span>
+              <span style="background:#222"></span>
+              <span style="background:#C9A87C"></span>
+              <span style="background:#fafafa"></span>
+            </div>
+          </div>
+          <div class="variant-meta">
+            <h3>V4 — Atelier del Sorriso</h3>
+            <p class="variant-tag">Prototype Studio · noir-luxury · referral-led</p>
+            <p class="variant-desc">Achromatic + champagne gold, Cormorant italic + Inter Tight. Video b-roll, casi d'autore, white interlude.</p>
+          </div>
+        </a>
+
+      </div>
+
+      <div class="extras">
+        <a class="extra-card extra-tour" href="/tour-360/?theme=v3">
+          <div class="extra-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+              <circle cx="12" cy="12" r="9"/>
+              <path d="M3 12h18"/>
+              <path d="M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/>
+            </svg>
+          </div>
+          <div>
+            <h3>Tour 360° della clinica</h3>
+            <p>Pagina condivisa, navigabile da tutte le 4 varianti. Three.js + design system threejs-journey, hotspot per cambiare ambiente, palette tematizzata via <code>?theme=v1|v2|v3|v4</code>.</p>
+          </div>
+          <span class="extra-cta">Apri il tour →</span>
+        </a>
+      </div>
+    </section>
+
+    <section id="brief" class="brief">
+      <h2 class="section-title">Il brief condiviso</h2>
+      <div class="brief-grid">
+        <div>
+          <h4>Studio</h4>
+          <p>Studio Dentistico Ferretti, Brescia (Via Triumplina 45). Fondato nel 1998. Direttore sanitario: Dr. Marco Ferretti.</p>
+        </div>
+        <div>
+          <h4>Team</h4>
+          <p>10 persone: 5 medici (Implantologia, Ortodonzia, Endodonzia, Pedodonzia, Parodontologia), 2 igieniste, 2 assistenti, 1 segreteria.</p>
+        </div>
+        <div>
+          <h4>Servizi</h4>
+          <p>8 categorie: Prevenzione, Conservativa, Endodonzia, Ortodonzia, Implantologia, Chirurgia, Parodontologia, Pedodonzia. Sub: Estetica, Sedazione cosciente.</p>
+        </div>
+        <div>
+          <h4>Pagine per variante</h4>
+          <p>10 pagine HTML reali: home, servizi, team, chi-siamo, prenotazione, contatti, casi-clinici, smile-design, blog + 4 articoli.</p>
+        </div>
+        <div>
+          <h4>Differenziatori condivisi</h4>
+          <p>Team completo presentato in tutte le varianti. Casi clinici before/after con slider drag. Smile design upload con preview canvas. Tour 360°. Blog con 4 articoli divulgativi.</p>
+        </div>
+        <div>
+          <h4>Compliance IT</h4>
+          <p>Direttore sanitario nominativo in ogni footer. P.IVA, ordine, schema JSON-LD <code>Dentist</code> + <code>Physician</code> + <code>BlogPosting</code>. Niente Trustpilot (Google Reviews integrate).</p>
         </div>
       </div>
     </section>
 
-    <!-- RECENSIONI -->
-    <section class="recensioni" id="recensioni">
-      <div class="container">
-        <div class="section-header">
-          <h2>Cosa dicono i pazienti</h2>
-          <p>127 recensioni su Google · Media 4,9 su 5</p>
-        </div>
-        <div class="recensioni__grid">
-
-          <blockquote class="recensione-card">
-            <div class="recensione-card__stars" aria-label="5 stelle su 5">★★★★★</div>
-            <p>"Finalmente uno studio dove non ho più paura dal dentista. Il Dr. Ferretti è preciso, professionale e mette a proprio agio fin dal primo momento. Lo consiglio a tutti."</p>
-            <footer>
-              <strong>Giulia M.</strong>
-              <span>· Brescia · verificata su Google</span>
-            </footer>
-          </blockquote>
-
-          <blockquote class="recensione-card">
-            <div class="recensione-card__stars" aria-label="5 stelle su 5">★★★★★</div>
-            <p>"Ho fatto un impianto qui dopo anni di indecisione. Risultato perfetto, tempi rispettati e personale gentilissimo. Vale ogni centesimo."</p>
-            <footer>
-              <strong>Roberto C.</strong>
-              <span>· Brescia · verificata su Google</span>
-            </footer>
-          </blockquote>
-
-          <blockquote class="recensione-card">
-            <div class="recensione-card__stars" aria-label="5 stelle su 5">★★★★★</div>
-            <p>"Porto i miei figli qui da 4 anni. Sono bravissimi con i bambini — mio figlio di 7 anni non ha più paura di venire dal dentista. Studio moderno e sempre puntuale."</p>
-            <footer>
-              <strong>Sara B.</strong>
-              <span>· Concesio · verificata su Google</span>
-            </footer>
-          </blockquote>
-
-        </div>
-        <div class="recensioni__cta">
-          <a href="https://maps.google.com" target="_blank" rel="noopener" class="btn btn--outline">
-            Leggi tutte le recensioni su Google
-          </a>
-        </div>
-      </div>
+    <section id="about" class="about">
+      <h2 class="section-title">Metodo</h2>
+      <ol class="method">
+        <li>
+          <strong>Analisi competitor.</strong> Reverse-engineering della IA di 3 siti dentistici italiani di riferimento (Centri Dentistici Primo, Bludental, HDental) per definire lo scheletro standard di settore.
+        </li>
+        <li>
+          <strong>Estrazione design system.</strong> 4 design system reali estratti via <code>skillui</code>: Dentologie (warm-clinical, già dentale), SI Oral Surgery (dark-medical, già dentale), WorldOfNRG (light-tech, energy editorial), Prototype Studio (achromatic luxury, creative agency).
+        </li>
+        <li>
+          <strong>Adattamento al verticale.</strong> Palette mitigate (≤30% modifiche dalle native) per il contesto healthcare; tipografia sostituita per i font proprietari (Riegla → Manrope, SilvanaDisplay → Cormorant); animazioni rispettose di <code>prefers-reduced-motion</code>.
+        </li>
+        <li>
+          <strong>Stack puro.</strong> HTML/CSS/JS vanilla, no framework, no build. Three.js (tour) + Lenis (V3, V4) + GSAP (V4) via CDN. Foto Unsplash + Pexels.
+        </li>
+      </ol>
     </section>
-
-    <!-- PRENOTA -->
-    <section class="prenota" id="prenota">
-      <div class="container prenota__inner">
-        <div class="prenota__content">
-          <span class="eyebrow">Prima visita gratuita</span>
-          <h2>Prenota la tua visita</h2>
-          <p>Compila il modulo e ti ricontattiamo entro pochi minuti negli orari di apertura.</p>
-          <ul class="prenota__info">
-            <li>📍 Via Triumplina 45, Brescia</li>
-            <li>📞 030 123 4567</li>
-            <li>🕐 Lun–Ven 9:00–19:00 · Sab 9:00–13:00</li>
-          </ul>
-        </div>
-        <form class="prenota__form" action="#" method="POST" novalidate>
-          <div class="form-field">
-            <label for="nome">Nome e cognome <span aria-hidden="true">*</span></label>
-            <input type="text" id="nome" name="nome" required autocomplete="name" placeholder="Mario Rossi">
-          </div>
-          <div class="form-field">
-            <label for="telefono">Telefono <span aria-hidden="true">*</span></label>
-            <input type="tel" id="telefono" name="telefono" required autocomplete="tel" placeholder="030 000 0000">
-          </div>
-          <div class="form-field">
-            <label for="servizio">Servizio di interesse</label>
-            <select id="servizio" name="servizio">
-              <option value="">— Seleziona —</option>
-              <option>Prima visita gratuita</option>
-              <option>Cure conservative</option>
-              <option>Implantologia</option>
-              <option>Ortodonzia</option>
-              <option>Igiene e prevenzione</option>
-              <option>Sbiancamento</option>
-            </select>
-          </div>
-          <div class="form-field">
-            <label for="messaggio">Note (facoltativo)</label>
-            <textarea id="messaggio" name="messaggio" rows="3" placeholder="Es. urgenza, orari preferiti…"></textarea>
-          </div>
-          <div class="form-field form-field--privacy">
-            <input type="checkbox" id="privacy" name="privacy" required>
-            <label for="privacy">
-              Ho letto e accetto la <a href="privacy.html">Privacy Policy</a>. I dati saranno usati solo per rispondere alla richiesta.
-            </label>
-          </div>
-          <button type="submit" class="btn btn--primary btn--lg btn--full">
-            Richiedi appuntamento
-          </button>
-          <p class="form-note">Ti richiamiamo entro l'orario di apertura. Nessuno spam.</p>
-        </form>
-      </div>
-    </section>
-
-    <!-- FAQ -->
-    <section class="faq" id="faq">
-      <div class="container faq__inner">
-        <div class="section-header">
-          <h2>Domande frequenti</h2>
-        </div>
-        <div class="faq__list">
-
-          <details class="faq-item">
-            <summary>La prima visita è davvero gratuita?</summary>
-            <p>Sì. La prima visita di controllo e consulenza è completamente gratuita e senza impegno. Include un'analisi dello stato della bocca e un piano di trattamento personalizzato.</p>
-          </details>
-
-          <details class="faq-item">
-            <summary>Siete convenzionati con il Servizio Sanitario Nazionale?</summary>
-            <p>Sì, lo studio è convenzionato SSN per le prestazioni di base (estrazioni, otturazioni, visite). Per le prestazioni in convenzione è necessaria l'impegnativa del medico di base.</p>
-          </details>
-
-          <details class="faq-item">
-            <summary>Quali metodi di pagamento accettate?</summary>
-            <p>Accettiamo contanti, carte di credito/debito e bancomat. Per trattamenti di importo superiore a €500 offriamo piani di rateizzazione a tasso zero in collaborazione con Cofidis.</p>
-          </details>
-
-          <details class="faq-item">
-            <summary>Quanto dura un trattamento implantare?</summary>
-            <p>Il percorso completo va dai 3 ai 6 mesi per gli impianti tradizionali. Con il carico immediato è possibile avere una corona provvisoria già il giorno dell'intervento.</p>
-          </details>
-
-          <details class="faq-item">
-            <summary>Come posso annullare o spostare un appuntamento?</summary>
-            <p>Puoi chiamarci al 030 123 4567 o scrivere via WhatsApp. Ti chiediamo di avvisarci almeno 24 ore prima per poter riassegnare lo slot ad altri pazienti.</p>
-          </details>
-
-        </div>
-      </div>
-    </section>
-
   </main>
 
-  <!-- FOOTER -->
-  <footer class="footer">
-    <div class="container footer__inner">
-      <div class="footer__brand">
-        <span class="logo__icon" aria-hidden="true">✦</span>
-        <strong>Studio Dentistico Ferretti</strong>
-        <p>Via Triumplina 45, 25136 Brescia (BS)<br>
-        P.IVA 01234567890 · Iscritto OMCeO Brescia n. 4821</p>
-      </div>
-      <nav class="footer__nav" aria-label="Link utili">
-        <ul>
-          <li><a href="#servizi">Servizi</a></li>
-          <li><a href="#chi-siamo">Chi siamo</a></li>
-          <li><a href="#prenota">Prenota</a></li>
-          <li><a href="privacy.html">Privacy Policy</a></li>
-          <li><a href="cookie.html">Cookie Policy</a></li>
-          <li><a href="note-legali.html">Note Legali</a></li>
-        </ul>
-      </nav>
-      <div class="footer__legal">
-        <p>© 2024 Studio Dentistico Ferretti — Tutti i diritti riservati.</p>
-        <p class="disclaimer">Il contenuto di questo sito ha scopo puramente informativo e non sostituisce il parere medico professionale. Per qualsiasi dubbio consultate il vostro medico o dentista.</p>
-      </div>
-    </div>
+  <footer class="site-footer">
+    <p>Case study fittizio — nessuna corrispondenza con uno studio reale. Foto: Unsplash + Pexels (CC0 / licenza Pexels free). Pannellum.org per le foto sferiche di esempio. <a href="https://github.com/alessiocalderaro1-cmd/studio-dentistico-ferretti" target="_blank" rel="noopener">Codice su GitHub</a>.</p>
   </footer>
-
-  <!-- CTA sticky mobile -->
-  <div class="sticky-cta" aria-label="Azioni rapide">
-    <a href="tel:+390301234567" class="btn btn--ghost btn--sm">📞 Chiama</a>
-    <a href="#prenota" class="btn btn--primary btn--sm">Prenota</a>
-  </div>
 
   <script src="main.js"></script>
 </body>
