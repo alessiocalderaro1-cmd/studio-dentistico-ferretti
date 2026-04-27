@@ -15,9 +15,9 @@ backLink.href = `/${theme === 'v1' ? 'v1-warm' : theme === 'v2' ? 'v2-medical' :
 // ── Rooms data ───────────────────────────────────────────────────
 const rooms = {
   entrance: {
-    name: 'Ingresso',
+    name: 'Ingresso · Reception',
     num: 1,
-    image: '/shared/images/panoramic/entrance.jpg',
+    image: '/shared/images/panoramic/entrance.svg',
     hotspots: [
       { lon: 0, lat: 0, target: 'waiting', label: 'Sala d\'attesa' },
       { lon: 90, lat: -5, target: 'chair', label: 'Riunito' }
@@ -26,7 +26,7 @@ const rooms = {
   waiting: {
     name: 'Sala d\'attesa',
     num: 2,
-    image: '/shared/images/panoramic/waiting.jpg',
+    image: '/shared/images/panoramic/waiting.svg',
     hotspots: [
       { lon: 180, lat: 0, target: 'entrance', label: 'Ingresso' },
       { lon: 60, lat: -5, target: 'chair', label: 'Riunito' },
@@ -36,7 +36,7 @@ const rooms = {
   chair: {
     name: 'Riunito odontoiatrico',
     num: 3,
-    image: '/shared/images/panoramic/chair.jpg',
+    image: '/shared/images/panoramic/chair.svg',
     hotspots: [
       { lon: 180, lat: 0, target: 'waiting', label: 'Sala d\'attesa' },
       { lon: 90, lat: -5, target: 'surgery', label: 'Sala chirurgica' }
@@ -45,7 +45,7 @@ const rooms = {
   surgery: {
     name: 'Sala chirurgica',
     num: 4,
-    image: '/shared/images/panoramic/surgery.jpg',
+    image: '/shared/images/panoramic/surgery.svg',
     hotspots: [
       { lon: 180, lat: 0, target: 'waiting', label: 'Sala d\'attesa' },
       { lon: -90, lat: -5, target: 'chair', label: 'Riunito' }

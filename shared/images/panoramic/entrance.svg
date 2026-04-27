@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4096 2048" preserveAspectRatio="none">
+  <defs>
+    <linearGradient id="ent-wall" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#e8eef2"/>
+      <stop offset="55%" stop-color="#dbe7ed"/>
+      <stop offset="100%" stop-color="#c4d5dd"/>
+    </linearGradient>
+    <linearGradient id="ent-floor" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#a8aeb3"/>
+      <stop offset="100%" stop-color="#5e6469"/>
+    </linearGradient>
+    <linearGradient id="ent-ceiling" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#f8fbfc"/>
+      <stop offset="100%" stop-color="#dde6ec"/>
+    </linearGradient>
+    <radialGradient id="ent-light" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#fff8d4" stop-opacity="0.95"/>
+      <stop offset="60%" stop-color="#fff8d4" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#fff8d4" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Soffitto -->
+  <rect x="0" y="0" width="4096" height="820" fill="url(#ent-ceiling)"/>
+  <!-- Pareti -->
+  <rect x="0" y="820" width="4096" height="380" fill="url(#ent-wall)"/>
+  <!-- Pavimento -->
+  <rect x="0" y="1200" width="4096" height="848" fill="url(#ent-floor)"/>
+
+  <!-- Plafoniere (luci LED a soffitto, ripetute) -->
+  <g opacity="0.7">
+    <rect x="200" y="120" width="280" height="40" rx="6" fill="#fffaeb"/>
+    <rect x="780" y="120" width="280" height="40" rx="6" fill="#fffaeb"/>
+    <rect x="1360" y="120" width="280" height="40" rx="6" fill="#fffaeb"/>
+    <rect x="1940" y="120" width="280" height="40" rx="6" fill="#fffaeb"/>
+    <rect x="2520" y="120" width="280" height="40" rx="6" fill="#fffaeb"/>
+    <rect x="3100" y="120" width="280" height="40" rx="6" fill="#fffaeb"/>
+    <rect x="3680" y="120" width="280" height="40" rx="6" fill="#fffaeb"/>
+  </g>
+
+  <!-- Reception desk al centro -->
+  <ellipse cx="2048" cy="1200" rx="900" ry="60" fill="#fff8d4" opacity="0.4"/>
+  <rect x="1500" y="900" width="1100" height="320" rx="8" fill="#3a4750"/>
+  <rect x="1500" y="900" width="1100" height="40" rx="8" fill="#5591B7"/>
+  <rect x="1530" y="960" width="1040" height="240" fill="#2a3640"/>
+  <rect x="1530" y="960" width="1040" height="240" fill="url(#ent-light)" opacity="0.3"/>
+
+  <!-- Logo Studio Ferretti sulla parete dietro reception -->
+  <g transform="translate(1700, 700)">
+    <text x="0" y="60" font-family="Georgia, serif" font-style="italic" font-weight="700" font-size="80" fill="#2a3640">Studio</text>
+    <text x="240" y="60" font-family="Georgia, serif" font-style="italic" font-weight="700" font-size="80" fill="#5591B7">Ferretti</text>
+    <line x1="240" y1="80" x2="650" y2="80" stroke="#5591B7" stroke-width="3"/>
+  </g>
+
+  <!-- Porte laterali -->
+  <rect x="200" y="780" width="240" height="420" fill="#5e6469"/>
+  <rect x="220" y="800" width="200" height="380" fill="#a8aeb3"/>
+  <rect x="3656" y="780" width="240" height="420" fill="#5e6469"/>
+  <rect x="3676" y="800" width="200" height="380" fill="#a8aeb3"/>
+
+  <!-- Piante decorative -->
+  <g transform="translate(700, 1100)">
+    <ellipse cx="0" cy="80" rx="50" ry="20" fill="#3a4750"/>
+    <path d="M 0 80 Q -40 -10 -50 -80 M 0 80 Q 0 -20 0 -100 M 0 80 Q 40 -10 50 -80" stroke="#4a7a4d" stroke-width="6" fill="none"/>
+  </g>
+  <g transform="translate(3396, 1100)">
+    <ellipse cx="0" cy="80" rx="50" ry="20" fill="#3a4750"/>
+    <path d="M 0 80 Q -40 -10 -50 -80 M 0 80 Q 0 -20 0 -100 M 0 80 Q 40 -10 50 -80" stroke="#4a7a4d" stroke-width="6" fill="none"/>
+  </g>
+
+  <!-- Pannelli decorativi laterali -->
+  <rect x="800" y="850" width="500" height="350" fill="#dbe7ed" stroke="#5591B7" stroke-width="2" rx="4"/>
+  <rect x="2796" y="850" width="500" height="350" fill="#dbe7ed" stroke="#5591B7" stroke-width="2" rx="4"/>
+
+  <!-- Riflessi sul pavimento -->
+  <ellipse cx="2048" cy="1280" rx="600" ry="40" fill="#fff8d4" opacity="0.15"/>
+
+  <!-- Etichetta ambiente (in alto, demo) -->
+  <g transform="translate(2048, 200)" text-anchor="middle">
+    <rect x="-280" y="-50" width="560" height="80" rx="40" fill="rgba(85, 145, 183, 0.85)"/>
+    <text x="0" y="3" font-family="system-ui, sans-serif" font-size="32" font-weight="600" letter-spacing="0.2em" fill="#fff">INGRESSO · RECEPTION</text>
+  </g>
+</svg>
