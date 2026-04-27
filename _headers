@@ -15,22 +15,14 @@
 /shared/fonts/*
   Cache-Control: public, max-age=31536000, immutable
 
-# Cache 1 anno per CSS e JS delle varianti (immutabili al deploy)
+# Cache 1 anno per CSS e JS delle 2 demo ufficiali (immutabili al deploy)
 /v1-warm/style.css
   Cache-Control: public, max-age=31536000, immutable
 /v1-warm/script.js
   Cache-Control: public, max-age=31536000, immutable
-/v2-medical/style.css
-  Cache-Control: public, max-age=31536000, immutable
-/v2-medical/script.js
-  Cache-Control: public, max-age=31536000, immutable
 /v3-tech/style.css
   Cache-Control: public, max-age=31536000, immutable
 /v3-tech/script.js
-  Cache-Control: public, max-age=31536000, immutable
-/v4-atelier/style.css
-  Cache-Control: public, max-age=31536000, immutable
-/v4-atelier/script.js
   Cache-Control: public, max-age=31536000, immutable
 
 # Tour 360°
@@ -43,10 +35,4 @@
 
 # Cache 5 minuti per HTML (revalidate veloce ad ogni deploy)
 /*.html
-  Cache-Control: public, max-age=300, must-revalidate
-
-# Landing root CSS/JS
-/style.css
-  Cache-Control: public, max-age=300, must-revalidate
-/main.js
   Cache-Control: public, max-age=300, must-revalidate

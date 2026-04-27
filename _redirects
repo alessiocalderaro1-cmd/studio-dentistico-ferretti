@@ -1,0 +1,3 @@
+# Cloudflare Pages — root redirect a V3 (demo principale)
+# V1 resta accessibile via /v1-warm/
+/  /v3-tech/  302

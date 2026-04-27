@@ -1,7 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 80" role="img" aria-label="Studio Ferretti">
-  <text x="0" y="60" font-family="'Cormorant Garamond', Georgia, serif" font-style="italic" font-weight="400" font-size="72" fill="#C9A87C">F</text>
-  <text x="64" y="38" font-family="'Inter Tight', sans-serif" font-weight="500" font-size="13" letter-spacing="0.3em" fill="#fafafa">STUDIO</text>
-  <text x="64" y="58" font-family="'Inter Tight', sans-serif" font-weight="500" font-size="13" letter-spacing="0.3em" fill="#fafafa">FERRETTI</text>
-  <line x1="64" y1="68" x2="200" y2="68" stroke="#C9A87C" stroke-width="0.5"/>
-  <text x="64" y="78" font-family="'Inter Tight', sans-serif" font-weight="400" font-size="9" letter-spacing="0.2em" fill="#9aa3b1">SMILE DESIGN · BRESCIA</text>
-</svg>

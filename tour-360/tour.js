@@ -3,14 +3,14 @@
 
 import * as THREE from 'three';
 
-// ── Theme detection ──────────────────────────────────────────────
+// ── Theme detection (solo V1 e V3 — demo ufficiali) ─────────────
 const params = new URLSearchParams(window.location.search);
-const theme = ['v1', 'v2', 'v3', 'v4'].includes(params.get('theme')) ? params.get('theme') : 'v3';
+const theme = ['v1', 'v3'].includes(params.get('theme')) ? params.get('theme') : 'v3';
 document.body.className = `theme-${theme}`;
 
 // Back link torna alla variante corretta
 const backLink = document.getElementById('tour-back');
-backLink.href = `/${theme === 'v1' ? 'v1-warm' : theme === 'v2' ? 'v2-medical' : theme === 'v3' ? 'v3-tech' : 'v4-atelier'}/`;
+backLink.href = theme === 'v1' ? '/v1-warm/' : '/v3-tech/';
 
 // ── Rooms data ───────────────────────────────────────────────────
 const rooms = {

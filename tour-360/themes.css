@@ -1,10 +1,9 @@
 /* ============================================================
-   Tour 360° — Theme classes per variante
-   Ogni variante override CTA + hotspot + font del titolo
-   Si applica al body via JS dopo aver letto ?theme=v1|v2|v3|v4
+   Tour 360° — Theme classes per le 2 demo ufficiali (V1 + V3)
+   Si applica al body via JS dopo aver letto ?theme=v1|v3
    ============================================================ */
 
-@import url('https://fonts.bunny.net/css?family=playfair-display:400i,700i|dm-sans:600|cormorant-garamond:400i&display=swap');
+@import url('https://fonts.bunny.net/css?family=playfair-display:400i,700i|manrope:200,400,700,800&display=swap');
 
 /* V1 - Studio Caldo (Dentologie warm) */
 body.theme-v1 {
@@ -25,25 +24,6 @@ body.theme-v1 .tour-hotspot { animation-name: hotspotPulseV1; }
   100% { box-shadow: 0 0 0 0 rgba(217, 117, 72, 0); }
 }
 
-/* V2 - Ambulatorio Autorevole (SI Oral Surgery medical) */
-body.theme-v2 {
-  --tour-cta-bg: #5591B7;
-  --tour-cta-text: #ffffff;
-  --tour-hotspot: #5591B7;
-  --tour-title-font: 'DM Sans', sans-serif;
-}
-body.theme-v2 .tour-room-title {
-  font-weight: 600;
-  letter-spacing: -0.01em;
-}
-body.theme-v2 .tour-hotspot { background: #5591B7; }
-body.theme-v2 .tour-hotspot { animation-name: hotspotPulseV2; }
-@keyframes hotspotPulseV2 {
-  0% { box-shadow: 0 0 0 0 rgba(85, 145, 183, 0.5); }
-  70% { box-shadow: 0 0 0 24px rgba(85, 145, 183, 0); }
-  100% { box-shadow: 0 0 0 0 rgba(85, 145, 183, 0); }
-}
-
 /* V3 - Studio del Futuro (WorldOfNRG light cool) — DEFAULT theme */
 body.theme-v3 {
   --tour-cta-bg: #c8a8ff;
@@ -54,24 +34,4 @@ body.theme-v3 {
 body.theme-v3 .tour-room-title {
   font-weight: 200;
   letter-spacing: -0.04em;
-}
-
-/* V4 - Atelier del Sorriso (Prototype Studio luxury) */
-body.theme-v4 {
-  --tour-cta-bg: #C9A87C;
-  --tour-cta-text: #0a0a0a;
-  --tour-hotspot: #C9A87C;
-  --tour-title-font: 'Cormorant Garamond', Georgia, serif;
-}
-body.theme-v4 .tour-room-title {
-  font-style: italic;
-  font-weight: 400;
-  letter-spacing: -0.01em;
-}
-body.theme-v4 .tour-hotspot { background: #C9A87C; }
-body.theme-v4 .tour-hotspot { animation-name: hotspotPulseV4; }
-@keyframes hotspotPulseV4 {
-  0% { box-shadow: 0 0 0 0 rgba(201, 168, 124, 0.5); }
-  70% { box-shadow: 0 0 0 24px rgba(201, 168, 124, 0); }
-  100% { box-shadow: 0 0 0 0 rgba(201, 168, 124, 0); }
 }
