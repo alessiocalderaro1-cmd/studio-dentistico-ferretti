@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" width="1200" height="900">
+  <defs>
+    <radialGradient id="ba4b-bg" cx="50%" cy="55%" r="65%">
+      <stop offset="0%" stop-color="#fce4d6"/>
+      <stop offset="100%" stop-color="#b8806a"/>
+    </radialGradient>
+    <linearGradient id="ba4b-lip" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#a85a52"/>
+      <stop offset="100%" stop-color="#7d3a36"/>
+    </linearGradient>
+    <radialGradient id="ba4b-mouth" cx="50%" cy="55%" r="50%">
+      <stop offset="0%" stop-color="#3a1818"/>
+      <stop offset="100%" stop-color="#1a0808"/>
+    </radialGradient>
+    <linearGradient id="ba4b-gum" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#c8665a"/>
+      <stop offset="100%" stop-color="#8a3e36"/>
+    </linearGradient>
+    <linearGradient id="ba4b-yellow" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#e8d088"/>
+      <stop offset="60%" stop-color="#d4b864"/>
+      <stop offset="100%" stop-color="#a08c4a"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="900" fill="url(#ba4b-bg)"/>
+  <ellipse cx="600" cy="450" rx="500" ry="280" fill="url(#ba4b-lip)"/>
+  <ellipse cx="600" cy="450" rx="460" ry="250" fill="url(#ba4b-mouth)"/>
+  <path d="M 200 320 Q 600 240 1000 320 L 1000 380 Q 600 320 200 380 Z" fill="url(#ba4b-gum)"/>
+  <path d="M 200 580 Q 600 660 1000 580 L 1000 540 Q 600 600 200 540 Z" fill="url(#ba4b-gum)"/>
+
+  <!-- Denti superiori GIALLI/INGIALLITI (caffè/fumo/tè) -->
+  <g id="ba4b-yellow-teeth">
+    <ellipse cx="305" cy="430" rx="32" ry="55" fill="url(#ba4b-yellow)"/>
+    <ellipse cx="380" cy="425" rx="34" ry="60" fill="url(#ba4b-yellow)"/>
+    <ellipse cx="455" cy="420" rx="36" ry="62" fill="url(#ba4b-yellow)"/>
+    <ellipse cx="535" cy="418" rx="38" ry="65" fill="url(#ba4b-yellow)"/>
+    <ellipse cx="618" cy="416" rx="40" ry="68" fill="url(#ba4b-yellow)"/>
+    <ellipse cx="700" cy="418" rx="38" ry="65" fill="url(#ba4b-yellow)"/>
+    <ellipse cx="780" cy="420" rx="36" ry="62" fill="url(#ba4b-yellow)"/>
+    <ellipse cx="855" cy="425" rx="34" ry="60" fill="url(#ba4b-yellow)"/>
+    <ellipse cx="925" cy="430" rx="32" ry="55" fill="url(#ba4b-yellow)"/>
+  </g>
+
+  <!-- Macchie scure aggiunte (caffè/tannini) -->
+  <g opacity="0.4">
+    <ellipse cx="455" cy="445" rx="14" ry="20" fill="#7a5828"/>
+    <ellipse cx="618" cy="440" rx="18" ry="24" fill="#7a5828"/>
+    <ellipse cx="780" cy="445" rx="14" ry="20" fill="#7a5828"/>
+  </g>
+
+  <!-- Denti inferiori giallastri -->
+  <g>
+    <ellipse cx="320" cy="525" rx="28" ry="48" fill="#c4ad6a"/>
+    <ellipse cx="386" cy="528" rx="30" ry="50" fill="#bca564"/>
+    <ellipse cx="452" cy="530" rx="30" ry="52" fill="#b09858"/>
+    <ellipse cx="518" cy="530" rx="32" ry="54" fill="#aa9252"/>
+    <ellipse cx="585" cy="530" rx="32" ry="55" fill="#a48c4c"/>
+    <ellipse cx="652" cy="530" rx="32" ry="54" fill="#aa9252"/>
+    <ellipse cx="718" cy="530" rx="30" ry="52" fill="#b09858"/>
+    <ellipse cx="784" cy="528" rx="30" ry="50" fill="#bca564"/>
+    <ellipse cx="850" cy="525" rx="28" ry="48" fill="#c4ad6a"/>
+  </g>
+
+  <!-- Highlights minimi (denti opachi) -->
+  <g opacity="0.3" fill="#ffffff">
+    <ellipse cx="618" cy="405" rx="6" ry="14"/>
+    <ellipse cx="455" cy="408" rx="5" ry="12"/>
+    <ellipse cx="780" cy="408" rx="5" ry="12"/>
+  </g>
+
+  <!-- Etichetta scala VITA pre -->
+  <g transform="translate(900, 760)">
+    <rect x="-220" y="-30" width="220" height="50" rx="8" fill="rgba(38, 29, 38, 0.85)"/>
+    <text x="-200" y="3" font-family="'SF Mono', monospace" font-size="14" font-weight="600" fill="#c8a8ff">SCALA VITA</text>
+    <text x="-100" y="3" font-family="'SF Mono', monospace" font-size="14" font-weight="600" fill="#fff">A3.5</text>
+  </g>
+
+  <g transform="translate(60, 60)">
+    <rect x="0" y="0" width="180" height="48" rx="24" fill="rgba(38, 29, 38, 0.85)"/>
+    <text x="90" y="32" font-family="'Manrope', sans-serif" font-weight="700" font-size="18" letter-spacing="0.2em" text-anchor="middle" fill="#c8a8ff">PRIMA</text>
+  </g>
+  <text x="60" y="850" font-family="'Manrope', sans-serif" font-weight="500" font-size="20" fill="#fff" opacity="0.85">Caso 08 · Parodontite cronica, infiammazione gengivale</text>
+</svg>

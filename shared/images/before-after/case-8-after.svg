@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" width="1200" height="900">
+  <defs>
+    <radialGradient id="ba4a-bg" cx="50%" cy="55%" r="65%">
+      <stop offset="0%" stop-color="#fde9dc"/>
+      <stop offset="100%" stop-color="#bf8d76"/>
+    </radialGradient>
+    <linearGradient id="ba4a-lip" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#b86862"/>
+      <stop offset="100%" stop-color="#893f3a"/>
+    </linearGradient>
+    <radialGradient id="ba4a-mouth" cx="50%" cy="55%" r="50%">
+      <stop offset="0%" stop-color="#3a1818"/>
+      <stop offset="100%" stop-color="#1a0808"/>
+    </radialGradient>
+    <linearGradient id="ba4a-gum" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#d27066"/>
+      <stop offset="100%" stop-color="#9a463e"/>
+    </linearGradient>
+    <linearGradient id="ba4a-bright" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="40%" stop-color="#fbf8f0"/>
+      <stop offset="100%" stop-color="#e8dcc4"/>
+    </linearGradient>
+    <radialGradient id="ba4a-glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#c8a8ff" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#c8a8ff" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1200" height="900" fill="url(#ba4a-bg)"/>
+  <ellipse cx="600" cy="450" rx="500" ry="280" fill="url(#ba4a-lip)"/>
+  <ellipse cx="600" cy="450" rx="460" ry="250" fill="url(#ba4a-mouth)"/>
+
+  <!-- Glow lavender attorno alla bocca (signature V3 sbiancamento "tech") -->
+  <ellipse cx="600" cy="450" rx="500" ry="220" fill="url(#ba4a-glow)"/>
+
+  <path d="M 200 320 Q 600 240 1000 320 L 1000 380 Q 600 320 200 380 Z" fill="url(#ba4a-gum)"/>
+  <path d="M 200 580 Q 600 660 1000 580 L 1000 540 Q 600 600 200 540 Z" fill="url(#ba4a-gum)"/>
+
+  <!-- Denti superiori BIANCHISSIMI -->
+  <g id="ba4a-bright-teeth">
+    <ellipse cx="305" cy="430" rx="32" ry="55" fill="url(#ba4a-bright)"/>
+    <ellipse cx="380" cy="425" rx="34" ry="60" fill="url(#ba4a-bright)"/>
+    <ellipse cx="455" cy="420" rx="36" ry="62" fill="url(#ba4a-bright)"/>
+    <ellipse cx="535" cy="418" rx="38" ry="65" fill="url(#ba4a-bright)"/>
+    <ellipse cx="618" cy="416" rx="40" ry="68" fill="url(#ba4a-bright)"/>
+    <ellipse cx="700" cy="418" rx="38" ry="65" fill="url(#ba4a-bright)"/>
+    <ellipse cx="780" cy="420" rx="36" ry="62" fill="url(#ba4a-bright)"/>
+    <ellipse cx="855" cy="425" rx="34" ry="60" fill="url(#ba4a-bright)"/>
+    <ellipse cx="925" cy="430" rx="32" ry="55" fill="url(#ba4a-bright)"/>
+  </g>
+
+  <!-- Denti inferiori bianchi -->
+  <g>
+    <ellipse cx="320" cy="525" rx="28" ry="48" fill="url(#ba4a-bright)"/>
+    <ellipse cx="386" cy="528" rx="30" ry="50" fill="url(#ba4a-bright)"/>
+    <ellipse cx="452" cy="530" rx="30" ry="52" fill="url(#ba4a-bright)"/>
+    <ellipse cx="518" cy="530" rx="32" ry="54" fill="url(#ba4a-bright)"/>
+    <ellipse cx="585" cy="530" rx="32" ry="55" fill="url(#ba4a-bright)"/>
+    <ellipse cx="652" cy="530" rx="32" ry="54" fill="url(#ba4a-bright)"/>
+    <ellipse cx="718" cy="530" rx="30" ry="52" fill="url(#ba4a-bright)"/>
+    <ellipse cx="784" cy="528" rx="30" ry="50" fill="url(#ba4a-bright)"/>
+    <ellipse cx="850" cy="525" rx="28" ry="48" fill="url(#ba4a-bright)"/>
+  </g>
+
+  <!-- Highlight INTENSI (denti lucidissimi post-sbiancamento) -->
+  <g opacity="0.85" fill="#ffffff">
+    <ellipse cx="305" cy="408" rx="11" ry="26"/>
+    <ellipse cx="380" cy="402" rx="13" ry="30"/>
+    <ellipse cx="455" cy="397" rx="14" ry="32"/>
+    <ellipse cx="535" cy="395" rx="15" ry="34"/>
+    <ellipse cx="618" cy="393" rx="16" ry="36"/>
+    <ellipse cx="700" cy="395" rx="15" ry="34"/>
+    <ellipse cx="780" cy="397" rx="14" ry="32"/>
+    <ellipse cx="855" cy="402" rx="13" ry="30"/>
+    <ellipse cx="925" cy="408" rx="11" ry="26"/>
+  </g>
+
+  <!-- Stelle sparkle (tech-tone signature V3) -->
+  <g fill="#7feff6">
+    <path d="M 350 360 L 358 376 L 374 384 L 358 392 L 350 408 L 342 392 L 326 384 L 342 376 Z"/>
+    <path d="M 870 350 L 876 362 L 888 368 L 876 374 L 870 386 L 864 374 L 852 368 L 864 362 Z"/>
+    <path d="M 600 320 L 605 330 L 615 335 L 605 340 L 600 350 L 595 340 L 585 335 L 595 330 Z"/>
+  </g>
+
+  <!-- Etichetta scala VITA post -->
+  <g transform="translate(900, 760)">
+    <rect x="-220" y="-30" width="220" height="50" rx="8" fill="rgba(200, 168, 255, 0.9)"/>
+    <text x="-200" y="3" font-family="'SF Mono', monospace" font-size="14" font-weight="600" fill="#261d26">SCALA VITA</text>
+    <text x="-100" y="3" font-family="'SF Mono', monospace" font-size="14" font-weight="700" fill="#261d26">B1 (-5 toni)</text>
+  </g>
+
+  <g transform="translate(60, 60)">
+    <rect x="0" y="0" width="180" height="48" rx="24" fill="rgba(200, 168, 255, 0.9)"/>
+    <text x="90" y="32" font-family="'Manrope', sans-serif" font-weight="700" font-size="18" letter-spacing="0.2em" text-anchor="middle" fill="#261d26">DOPO</text>
+  </g>
+  <text x="60" y="850" font-family="'Manrope', sans-serif" font-weight="500" font-size="20" fill="#fff" opacity="0.9">Mantenimento parodontale · 5 anni · denti naturali preservati</text>
+</svg>

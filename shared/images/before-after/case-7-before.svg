@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" width="1200" height="900">
+  <defs>
+    <radialGradient id="ba2b-bg" cx="50%" cy="55%" r="65%">
+      <stop offset="0%" stop-color="#fce4d6"/>
+      <stop offset="100%" stop-color="#b8806a"/>
+    </radialGradient>
+    <linearGradient id="ba2b-lip" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#a85a52"/>
+      <stop offset="100%" stop-color="#7d3a36"/>
+    </linearGradient>
+    <radialGradient id="ba2b-mouth" cx="50%" cy="55%" r="50%">
+      <stop offset="0%" stop-color="#3a1818"/>
+      <stop offset="100%" stop-color="#1a0808"/>
+    </radialGradient>
+    <linearGradient id="ba2b-gum" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#c8665a"/>
+      <stop offset="100%" stop-color="#8a3e36"/>
+    </linearGradient>
+    <linearGradient id="ba2b-tooth-dark" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#a89070"/>
+      <stop offset="60%" stop-color="#8e7656"/>
+      <stop offset="100%" stop-color="#6a5840"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="900" fill="url(#ba2b-bg)"/>
+  <ellipse cx="600" cy="450" rx="500" ry="280" fill="url(#ba2b-lip)"/>
+  <ellipse cx="600" cy="450" rx="460" ry="250" fill="url(#ba2b-mouth)"/>
+  <path d="M 200 320 Q 600 240 1000 320 L 1000 380 Q 600 320 200 380 Z" fill="url(#ba2b-gum)"/>
+  <path d="M 200 580 Q 600 660 1000 580 L 1000 540 Q 600 600 200 540 Z" fill="url(#ba2b-gum)"/>
+
+  <!-- 8 denti frontali superiori scuri/macchiati con scheggiature -->
+  <g id="ba2b-front">
+    <ellipse cx="380" cy="425" rx="34" ry="58" fill="url(#ba2b-tooth-dark)"/>
+    <ellipse cx="455" cy="420" rx="36" ry="62" fill="url(#ba2b-tooth-dark)"/>
+    <!-- Dente con scheggiatura visibile -->
+    <ellipse cx="535" cy="418" rx="38" ry="64" fill="url(#ba2b-tooth-dark)"/>
+    <path d="M 525 470 L 545 470 L 540 480 Z" fill="url(#ba2b-mouth)"/>
+    <ellipse cx="618" cy="416" rx="40" ry="66" fill="url(#ba2b-tooth-dark)"/>
+    <!-- Macchia scura -->
+    <ellipse cx="608" cy="430" rx="10" ry="14" fill="#4a3828" opacity="0.6"/>
+    <ellipse cx="700" cy="418" rx="38" ry="64" fill="url(#ba2b-tooth-dark)"/>
+    <!-- Otturazione vecchia visibile -->
+    <rect x="690" y="410" width="20" height="14" fill="#5a4a36" opacity="0.7"/>
+    <ellipse cx="780" cy="420" rx="36" ry="62" fill="url(#ba2b-tooth-dark)"/>
+    <ellipse cx="855" cy="425" rx="34" ry="58" fill="url(#ba2b-tooth-dark)"/>
+    <ellipse cx="305" cy="430" rx="32" ry="54" fill="url(#ba2b-tooth-dark)"/>
+    <ellipse cx="925" cy="430" rx="32" ry="54" fill="url(#ba2b-tooth-dark)"/>
+  </g>
+
+  <!-- Denti inferiori (anche giallastri) -->
+  <g>
+    <ellipse cx="340" cy="525" rx="28" ry="46" fill="#9c8a6c"/>
+    <ellipse cx="400" cy="528" rx="28" ry="48" fill="#9c8a6c"/>
+    <ellipse cx="460" cy="530" rx="28" ry="48" fill="#8e7c5e"/>
+    <ellipse cx="520" cy="530" rx="28" ry="48" fill="#8e7c5e"/>
+    <ellipse cx="580" cy="530" rx="28" ry="50" fill="#8e7c5e"/>
+    <ellipse cx="640" cy="530" rx="28" ry="48" fill="#8e7c5e"/>
+    <ellipse cx="700" cy="530" rx="28" ry="48" fill="#8e7c5e"/>
+    <ellipse cx="760" cy="528" rx="28" ry="48" fill="#9c8a6c"/>
+    <ellipse cx="820" cy="525" rx="28" ry="46" fill="#9c8a6c"/>
+    <ellipse cx="876" cy="522" rx="26" ry="44" fill="#9c8a6c"/>
+  </g>
+
+  <!-- Etichetta -->
+  <g transform="translate(60, 60)">
+    <rect x="0" y="0" width="180" height="48" rx="24" fill="rgba(38, 29, 38, 0.85)"/>
+    <text x="90" y="32" font-family="'Manrope', sans-serif" font-weight="700" font-size="18" letter-spacing="0.2em" text-anchor="middle" fill="#c8a8ff">PRIMA</text>
+  </g>
+  <text x="60" y="850" font-family="'Manrope', sans-serif" font-weight="500" font-size="20" fill="#fff" opacity="0.85">Caso 07 · Lesione apicale persistente, otturazione fallita</text>
+</svg>

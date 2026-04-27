@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" width="1200" height="900">
+  <defs>
+    <radialGradient id="ba3b-bg" cx="50%" cy="55%" r="65%">
+      <stop offset="0%" stop-color="#fce4d6"/>
+      <stop offset="100%" stop-color="#b8806a"/>
+    </radialGradient>
+    <linearGradient id="ba3b-lip" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#a85a52"/>
+      <stop offset="100%" stop-color="#7d3a36"/>
+    </linearGradient>
+    <radialGradient id="ba3b-mouth" cx="50%" cy="55%" r="50%">
+      <stop offset="0%" stop-color="#3a1818"/>
+      <stop offset="100%" stop-color="#1a0808"/>
+    </radialGradient>
+    <linearGradient id="ba3b-gum" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#c8665a"/>
+      <stop offset="100%" stop-color="#8a3e36"/>
+    </linearGradient>
+    <linearGradient id="ba3b-tooth" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#f5edd8"/>
+      <stop offset="100%" stop-color="#d2c0a0"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="900" fill="url(#ba3b-bg)"/>
+  <ellipse cx="600" cy="450" rx="500" ry="280" fill="url(#ba3b-lip)"/>
+  <ellipse cx="600" cy="450" rx="460" ry="250" fill="url(#ba3b-mouth)"/>
+  <path d="M 200 320 Q 600 240 1000 320 L 1000 380 Q 600 320 200 380 Z" fill="url(#ba3b-gum)"/>
+  <path d="M 200 580 Q 600 660 1000 580 L 1000 540 Q 600 600 200 540 Z" fill="url(#ba3b-gum)"/>
+
+  <!-- Denti superiori AFFOLLATI/STORTI/RUOTATI -->
+  <g id="ba3b-crowded">
+    <ellipse cx="300" cy="430" rx="30" ry="52" fill="url(#ba3b-tooth)" transform="rotate(-12 300 430)"/>
+    <ellipse cx="365" cy="438" rx="32" ry="56" fill="url(#ba3b-tooth)" transform="rotate(15 365 438)"/>
+    <!-- Dente sovrapposto -->
+    <ellipse cx="425" cy="425" rx="34" ry="58" fill="url(#ba3b-tooth)" transform="rotate(-8 425 425)"/>
+    <ellipse cx="478" cy="445" rx="32" ry="55" fill="url(#ba3b-tooth)" transform="rotate(20 478 445)"/>
+    <!-- Incisivo centrale ruotato 90° -->
+    <ellipse cx="540" cy="425" rx="55" ry="38" fill="url(#ba3b-tooth)"/>
+    <!-- Diastema (gap) -->
+    <ellipse cx="620" cy="418" rx="36" ry="62" fill="url(#ba3b-tooth)"/>
+    <ellipse cx="685" cy="430" rx="32" ry="56" fill="url(#ba3b-tooth)" transform="rotate(-15 685 430)"/>
+    <ellipse cx="745" cy="425" rx="33" ry="58" fill="url(#ba3b-tooth)" transform="rotate(10 745 425)"/>
+    <!-- Dente in vestibolo (sporge) -->
+    <ellipse cx="800" cy="450" rx="30" ry="55" fill="url(#ba3b-tooth)" transform="rotate(-22 800 450)"/>
+    <ellipse cx="865" cy="430" rx="34" ry="58" fill="url(#ba3b-tooth)" transform="rotate(8 865 430)"/>
+    <ellipse cx="930" cy="438" rx="30" ry="52" fill="url(#ba3b-tooth)" transform="rotate(-10 930 438)"/>
+  </g>
+
+  <!-- Denti inferiori affollati -->
+  <g>
+    <ellipse cx="340" cy="528" rx="28" ry="48" fill="url(#ba3b-tooth)" transform="rotate(15 340 528)"/>
+    <ellipse cx="400" cy="535" rx="28" ry="46" fill="url(#ba3b-tooth)" transform="rotate(-10 400 535)"/>
+    <ellipse cx="455" cy="528" rx="28" ry="48" fill="url(#ba3b-tooth)" transform="rotate(18 455 528)"/>
+    <ellipse cx="510" cy="540" rx="28" ry="44" fill="url(#ba3b-tooth)" transform="rotate(-12 510 540)"/>
+    <ellipse cx="570" cy="525" rx="28" ry="50" fill="url(#ba3b-tooth)" transform="rotate(8 570 525)"/>
+    <ellipse cx="630" cy="535" rx="28" ry="46" fill="url(#ba3b-tooth)" transform="rotate(-15 630 535)"/>
+    <ellipse cx="690" cy="528" rx="28" ry="48" fill="url(#ba3b-tooth)" transform="rotate(12 690 528)"/>
+    <ellipse cx="750" cy="540" rx="28" ry="46" fill="url(#ba3b-tooth)" transform="rotate(-8 750 540)"/>
+    <ellipse cx="810" cy="525" rx="28" ry="50" fill="url(#ba3b-tooth)" transform="rotate(20 810 525)"/>
+    <ellipse cx="870" cy="535" rx="28" ry="46" fill="url(#ba3b-tooth)" transform="rotate(-15 870 535)"/>
+  </g>
+
+  <g transform="translate(60, 60)">
+    <rect x="0" y="0" width="180" height="48" rx="24" fill="rgba(38, 29, 38, 0.85)"/>
+    <text x="90" y="32" font-family="'Manrope', sans-serif" font-weight="700" font-size="18" letter-spacing="0.2em" text-anchor="middle" fill="#c8a8ff">PRIMA</text>
+  </g>
+  <text x="60" y="850" font-family="'Manrope', sans-serif" font-weight="500" font-size="20" fill="#fff" opacity="0.85">Caso 06 · Cross-bite anteriore (ortodonzia interceptiva)</text>
+</svg>

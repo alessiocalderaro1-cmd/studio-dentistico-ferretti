@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" width="1200" height="900">
+  <defs>
+    <radialGradient id="ba1b-bg" cx="50%" cy="55%" r="65%">
+      <stop offset="0%" stop-color="#fce4d6"/>
+      <stop offset="60%" stop-color="#e8b9a0"/>
+      <stop offset="100%" stop-color="#b8806a"/>
+    </radialGradient>
+    <linearGradient id="ba1b-lip" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#a85a52"/>
+      <stop offset="100%" stop-color="#7d3a36"/>
+    </linearGradient>
+    <radialGradient id="ba1b-mouth" cx="50%" cy="55%" r="50%">
+      <stop offset="0%" stop-color="#3a1818"/>
+      <stop offset="100%" stop-color="#1a0808"/>
+    </radialGradient>
+    <linearGradient id="ba1b-gum" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#c8665a"/>
+      <stop offset="100%" stop-color="#8a3e36"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Sfondo (pelle/labbra) -->
+  <rect width="1200" height="900" fill="url(#ba1b-bg)"/>
+
+  <!-- Bocca aperta (forma ovale) -->
+  <ellipse cx="600" cy="450" rx="500" ry="280" fill="url(#ba1b-lip)"/>
+  <ellipse cx="600" cy="450" rx="460" ry="250" fill="url(#ba1b-mouth)"/>
+
+  <!-- Gengiva superiore -->
+  <path d="M 200 320 Q 600 240 1000 320 L 1000 380 Q 600 320 200 380 Z" fill="url(#ba1b-gum)"/>
+  <!-- Gengiva inferiore -->
+  <path d="M 200 580 Q 600 660 1000 580 L 1000 540 Q 600 600 200 540 Z" fill="url(#ba1b-gum)"/>
+
+  <!-- Denti superiori (alcuni mancanti per case implantologia full-arch) -->
+  <g id="ba1b-upper-teeth">
+    <!-- Manca incisivo centrale destro -->
+    <ellipse cx="320" cy="430" rx="32" ry="55" fill="#e8d8c0" opacity="0.95"/>
+    <ellipse cx="392" cy="425" rx="34" ry="60" fill="#dccdb3" opacity="0.95"/>
+    <ellipse cx="468" cy="420" rx="36" ry="62" fill="#cab89a" opacity="0.95"/>
+    <ellipse cx="546" cy="418" rx="38" ry="64" fill="#b8a584" opacity="0.95"/>
+    <!-- Dente mancante centrale (gap) -->
+    <rect x="595" y="380" width="50" height="100" fill="url(#ba1b-mouth)" rx="4"/>
+    <!-- Continua arcata destra -->
+    <ellipse cx="694" cy="420" rx="36" ry="62" fill="#cab89a" opacity="0.95"/>
+    <ellipse cx="772" cy="425" rx="34" ry="60" fill="#dccdb3" opacity="0.95"/>
+    <!-- Manca premolare destro -->
+    <rect x="820" y="385" width="42" height="90" fill="url(#ba1b-mouth)" rx="4"/>
+    <ellipse cx="900" cy="430" rx="32" ry="55" fill="#c4b194" opacity="0.95"/>
+    <ellipse cx="970" cy="435" rx="28" ry="48" fill="#b8a584" opacity="0.95"/>
+  </g>
+
+  <!-- Denti inferiori (anche con gap) -->
+  <g id="ba1b-lower-teeth">
+    <ellipse cx="340" cy="525" rx="28" ry="48" fill="#c8b598" opacity="0.95"/>
+    <ellipse cx="400" cy="528" rx="28" ry="48" fill="#bea888" opacity="0.95"/>
+    <ellipse cx="460" cy="530" rx="26" ry="45" fill="#b09a78" opacity="0.95"/>
+    <ellipse cx="520" cy="530" rx="26" ry="45" fill="#a89070" opacity="0.95"/>
+    <!-- Dente mancante inferiore -->
+    <rect x="563" y="500" width="44" height="80" fill="url(#ba1b-mouth)" rx="4"/>
+    <ellipse cx="640" cy="530" rx="26" ry="45" fill="#a89070" opacity="0.95"/>
+    <ellipse cx="700" cy="530" rx="26" ry="45" fill="#b09a78" opacity="0.95"/>
+    <ellipse cx="760" cy="528" rx="28" ry="48" fill="#bea888" opacity="0.95"/>
+    <ellipse cx="820" cy="525" rx="28" ry="48" fill="#c8b598" opacity="0.95"/>
+    <ellipse cx="876" cy="522" rx="26" ry="45" fill="#bea888" opacity="0.95"/>
+  </g>
+
+  <!-- Highlight su alcuni denti rimanenti (riflessi luce) -->
+  <g opacity="0.4" fill="#ffffff">
+    <ellipse cx="320" cy="410" rx="8" ry="20"/>
+    <ellipse cx="468" cy="400" rx="10" ry="22"/>
+    <ellipse cx="694" cy="400" rx="10" ry="22"/>
+  </g>
+
+  <!-- Etichetta "PRIMA" -->
+  <g transform="translate(60, 60)">
+    <rect x="0" y="0" width="180" height="48" rx="24" fill="rgba(38, 29, 38, 0.85)"/>
+    <text x="90" y="32" font-family="'Manrope', sans-serif" font-weight="700" font-size="18" letter-spacing="0.2em" text-anchor="middle" fill="#c8a8ff">PRIMA</text>
+  </g>
+  <text x="60" y="850" font-family="'Manrope', sans-serif" font-weight="500" font-size="20" fill="#fff" opacity="0.85">Caso 01 · Edentulia parziale superiore</text>
+</svg>

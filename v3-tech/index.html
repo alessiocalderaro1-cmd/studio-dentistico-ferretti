@@ -113,112 +113,103 @@
       </div>
     </section>
 
-    <!-- SERVIZI tabbed accordion -->
+    <!-- SERVIZI asymmetric grid Prototype-style -->
     <section class="section" id="servizi">
       <div class="container">
         <div class="section-header">
           <p class="eyebrow">Cosa facciamo</p>
           <h2><span class="w-light">Otto</span> <span class="w-bold">aree cliniche</span><span class="dot" style="background: var(--info)"></span></h2>
-          <p>Click su una categoria per vedere il dettaglio. Ogni area ha un medico responsabile dedicato.</p>
+          <p>Ogni area ha un medico responsabile dedicato. Hover per scoprire i dettagli, click per la pagina completa.</p>
         </div>
 
-        <div class="services-accordion">
-          <details class="service-row" open>
-            <summary class="service-summary">
-              <div class="service-summary-left">
-                <span class="service-num">/01</span>
-                <span class="service-name">Prevenzione e igiene</span>
-              </div>
-              <span class="service-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
-            </summary>
-            <div class="service-detail">
-              <div>
-                <p>Detartrasi ad ultrasuoni, levigatura radicolare, applicazione di fluoro topico. Sedute da 45-60 minuti per consentire una pulizia completa, senza fretta.</p>
-                <p><strong>Igienista dedicata · Sedute 45-60 min · €80-110</strong></p>
-              </div>
-              <div class="service-detail-image"><img src="/shared/images/services/prevenzione.jpg" alt=""></div>
+        <div class="services-asym">
+          <a href="servizi.html#implantologia" class="srv-card srv-hero">
+            <span class="srv-num">/01</span>
+            <div class="srv-img"><img src="/shared/images/services/implantologia.jpg" alt=""></div>
+            <div class="srv-overlay">
+              <h3 class="srv-title"><span class="w-light">Implan</span><span class="w-bold">tologia</span></h3>
+              <p class="srv-meta">Dr. Marco Ferretti · 1.500+ impianti · Garanzia 10 anni</p>
+              <p class="srv-desc">Pianificazione 3D con CBCT, dima chirurgica computer-guidata. Impianti delle migliori marche europee.</p>
+              <span class="srv-price">€1.200-2.500 singolo · €7.000-12.000 all-on-4</span>
             </div>
-          </details>
+          </a>
 
-          <details class="service-row">
-            <summary class="service-summary">
-              <div class="service-summary-left">
-                <span class="service-num">/02</span>
-                <span class="service-name">Conservativa</span>
-              </div>
-              <span class="service-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
-            </summary>
-            <div class="service-detail">
-              <div><p>Otturazioni in composito nano-ibrido. Tecnica adesiva moderna, isolamento con diga di gomma sempre.</p><p><strong>€100-220 per dente</strong></p></div>
-              <div class="service-detail-image"><img src="/shared/images/services/conservativa.jpg" alt=""></div>
+          <a href="servizi.html#ortodonzia" class="srv-card srv-tall">
+            <span class="srv-num">/02</span>
+            <div class="srv-img"><img src="/shared/images/services/ortodonzia.jpg" alt=""></div>
+            <div class="srv-overlay">
+              <h3 class="srv-title"><span class="w-light">Orto</span><span class="w-bold">donzia</span></h3>
+              <p class="srv-meta">Invisalign certified · 200+ casi</p>
+              <p class="srv-desc">Allineatori trasparenti e ortodonzia fissa. Per adulti e bambini.</p>
+              <span class="srv-price">€2.500-5.500</span>
             </div>
-          </details>
+          </a>
 
-          <details class="service-row">
-            <summary class="service-summary">
-              <div class="service-summary-left"><span class="service-num">/03</span><span class="service-name">Endodonzia</span></div>
-              <span class="service-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
-            </summary>
-            <div class="service-detail">
-              <div><p>Trattamento canalare al microscopio operativo Zeiss. Tasso di successo &gt;92%.</p><p><strong>€350-650 · Dr. Luca Bianchi</strong></p></div>
-              <div class="service-detail-image"><img src="/shared/images/services/endodonzia.jpg" alt=""></div>
+          <a href="servizi.html#prevenzione" class="srv-card srv-quarter">
+            <span class="srv-num">/03</span>
+            <div class="srv-img"><img src="/shared/images/services/prevenzione.jpg" alt=""></div>
+            <div class="srv-overlay">
+              <h3 class="srv-title"><span class="w-light">Preven</span><span class="w-bold">zione</span></h3>
+              <p class="srv-meta">Igieniste dedicate · 45-60 min</p>
+              <span class="srv-price">€80-110</span>
             </div>
-          </details>
+          </a>
 
-          <details class="service-row">
-            <summary class="service-summary">
-              <div class="service-summary-left"><span class="service-num">/04</span><span class="service-name">Ortodonzia / Invisalign</span></div>
-              <span class="service-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
-            </summary>
-            <div class="service-detail">
-              <div><p>Invisalign certified provider dal 2018, oltre 200 casi trattati. Allineatori trasparenti, ortodonzia fissa, interceptiva pediatrica.</p><p><strong>€2.500-5.500 · Dr.ssa Chiara Ferretti</strong></p></div>
-              <div class="service-detail-image"><img src="/shared/images/services/ortodonzia.jpg" alt=""></div>
+          <a href="servizi.html#endodonzia" class="srv-card srv-quarter">
+            <span class="srv-num">/04</span>
+            <div class="srv-img"><img src="/shared/images/services/endodonzia.jpg" alt=""></div>
+            <div class="srv-overlay">
+              <h3 class="srv-title"><span class="w-light">Endo</span><span class="w-bold">donzia</span></h3>
+              <p class="srv-meta">Microscopio Zeiss · &gt;92% successo</p>
+              <span class="srv-price">€350-650</span>
             </div>
-          </details>
+          </a>
 
-          <details class="service-row">
-            <summary class="service-summary">
-              <div class="service-summary-left"><span class="service-num">/05</span><span class="service-name">Implantologia</span></div>
-              <span class="service-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
-            </summary>
-            <div class="service-detail">
-              <div><p>Pianificazione 3D con CBCT, dima chirurgica computer-guidata. Impianti delle migliori marche europee.</p><p><strong>€1.200-2.500 singolo · €7.000-12.000 all-on-4</strong></p></div>
-              <div class="service-detail-image"><img src="/shared/images/services/implantologia.jpg" alt=""></div>
+          <a href="servizi.html#conservativa" class="srv-card srv-quarter">
+            <span class="srv-num">/05</span>
+            <div class="srv-img"><img src="/shared/images/services/conservativa.jpg" alt=""></div>
+            <div class="srv-overlay">
+              <h3 class="srv-title"><span class="w-light">Conser</span><span class="w-bold">vativa</span></h3>
+              <p class="srv-meta">Composito nano-ibrido · diga di gomma</p>
+              <span class="srv-price">€100-220 per dente</span>
             </div>
-          </details>
+          </a>
 
-          <details class="service-row">
-            <summary class="service-summary">
-              <div class="service-summary-left"><span class="service-num">/06</span><span class="service-name">Chirurgia orale</span></div>
-              <span class="service-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
-            </summary>
-            <div class="service-detail">
-              <div><p>Estrazioni semplici e complesse, denti del giudizio inclusi. Sedazione cosciente disponibile.</p><p><strong>€80-480 · Sedazione +€150</strong></p></div>
-              <div class="service-detail-image"><img src="/shared/images/services/chirurgia.jpg" alt=""></div>
+          <a href="servizi.html#pedodonzia" class="srv-card srv-quarter">
+            <span class="srv-num">/06</span>
+            <div class="srv-img"><img src="/shared/images/services/pedodonzia.jpg" alt=""></div>
+            <div class="srv-overlay">
+              <h3 class="srv-title"><span class="w-light">Pedo</span><span class="w-bold">donzia</span></h3>
+              <p class="srv-meta">Dr.ssa S. Romano · solo bambini</p>
+              <span class="srv-price">Prima visita gratuita</span>
             </div>
-          </details>
+          </a>
 
-          <details class="service-row">
-            <summary class="service-summary">
-              <div class="service-summary-left"><span class="service-num">/07</span><span class="service-name">Parodontologia</span></div>
-              <span class="service-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
-            </summary>
-            <div class="service-detail">
-              <div><p>Diagnosi parodontale completa, terapia causale, mantenimento periodico.</p><p><strong>€60-250 · Dr. Andrea Greco · Univ. Berna</strong></p></div>
-              <div class="service-detail-image"><img src="/shared/images/services/parodontologia.jpg" alt=""></div>
+          <a href="servizi.html#chirurgia" class="srv-card srv-half">
+            <span class="srv-num">/07</span>
+            <div class="srv-img"><img src="/shared/images/services/chirurgia.jpg" alt=""></div>
+            <div class="srv-overlay">
+              <h3 class="srv-title"><span class="w-light">Chirurgia</span> <span class="w-bold">orale</span></h3>
+              <p class="srv-meta">Sala dedicata classe B · sedazione cosciente</p>
+              <p class="srv-desc">Estrazioni complesse, denti del giudizio inclusi, ricostruzioni ossee. Disponibile sedazione cosciente con N₂O/O₂ per pazienti ansiosi.</p>
+              <span class="srv-price">€80-480 · Sedazione +€150</span>
             </div>
-          </details>
+          </a>
 
-          <details class="service-row">
-            <summary class="service-summary">
-              <div class="service-summary-left"><span class="service-num">/08</span><span class="service-name">Pedodonzia</span></div>
-              <span class="service-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
-            </summary>
-            <div class="service-detail">
-              <div><p>Lavora esclusivamente con i bambini, dai 12 mesi all'adolescenza. Approccio tell-show-do.</p><p><strong>Prima visita gratuita · Dr.ssa Sofia Romano</strong></p></div>
-              <div class="service-detail-image"><img src="/shared/images/services/pedodonzia.jpg" alt=""></div>
+          <a href="servizi.html#parodontologia" class="srv-card srv-half">
+            <span class="srv-num">/08</span>
+            <div class="srv-img"><img src="/shared/images/services/parodontologia.jpg" alt=""></div>
+            <div class="srv-overlay">
+              <h3 class="srv-title"><span class="w-light">Parodonto</span><span class="w-bold">logia</span></h3>
+              <p class="srv-meta">Dr. A. Greco · Università di Berna</p>
+              <p class="srv-desc">Diagnosi parodontale completa con sondaggio. Terapia causale e mantenimento personalizzato. Esiti documentati a 5 anni.</p>
+              <span class="srv-price">€60-100 visita · €150-250 levigatura quadrante</span>
             </div>
-          </details>
+          </a>
+        </div>
+
+        <div style="margin-top: var(--space-12); text-align: center">
+          <a href="servizi.html" class="btn-ghost">Esplora tutti i dettagli clinici</a>
         </div>
       </div>
     </section>
@@ -299,19 +290,19 @@
         </div>
         <div class="cases-grid">
           <article class="case-item">
-            <div class="ba-slider" data-before="/shared/images/before-after/case-1-before.jpg" data-after="/shared/images/before-after/case-1-after.jpg" data-label-before="Prima" data-label-after="Dopo"></div>
+            <div class="ba-slider" data-before="/shared/images/before-after/case-1-before.svg" data-after="/shared/images/before-after/case-1-after.svg" data-label-before="Prima" data-label-after="Dopo"></div>
             <div class="case-meta"><h4>Implantologia full-arch</h4><p>F., 58 anni · 6 impianti + protesi · 5 mesi</p></div>
           </article>
           <article class="case-item">
-            <div class="ba-slider" data-before="/shared/images/before-after/case-2-before.jpg" data-after="/shared/images/before-after/case-2-after.jpg" data-label-before="Prima" data-label-after="Dopo"></div>
+            <div class="ba-slider" data-before="/shared/images/before-after/case-2-before.svg" data-after="/shared/images/before-after/case-2-after.svg" data-label-before="Prima" data-label-after="Dopo"></div>
             <div class="case-meta"><h4>Faccette ceramica</h4><p>M., 41 anni · 8 faccette + ritocco gengivale</p></div>
           </article>
           <article class="case-item">
-            <div class="ba-slider" data-before="/shared/images/before-after/case-3-before.jpg" data-after="/shared/images/before-after/case-3-after.jpg" data-label-before="Prima" data-label-after="Dopo"></div>
+            <div class="ba-slider" data-before="/shared/images/before-after/case-3-before.svg" data-after="/shared/images/before-after/case-3-after.svg" data-label-before="Prima" data-label-after="Dopo"></div>
             <div class="case-meta"><h4>Invisalign adulti</h4><p>F., 34 anni · affollamento moderato · 14 mesi</p></div>
           </article>
           <article class="case-item">
-            <div class="ba-slider" data-before="/shared/images/before-after/case-4-before.jpg" data-after="/shared/images/before-after/case-4-after.jpg" data-label-before="Prima" data-label-after="Dopo"></div>
+            <div class="ba-slider" data-before="/shared/images/before-after/case-4-before.svg" data-after="/shared/images/before-after/case-4-after.svg" data-label-before="Prima" data-label-after="Dopo"></div>
             <div class="case-meta"><h4>Sbiancamento professionale</h4><p>F., 29 anni · seduta singola + mantenimento</p></div>
           </article>
         </div>

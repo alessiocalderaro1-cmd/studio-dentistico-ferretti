@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" width="1200" height="900">
+  <defs>
+    <radialGradient id="ba2a-bg" cx="50%" cy="55%" r="65%">
+      <stop offset="0%" stop-color="#fde9dc"/>
+      <stop offset="100%" stop-color="#bf8d76"/>
+    </radialGradient>
+    <linearGradient id="ba2a-lip" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#b86862"/>
+      <stop offset="100%" stop-color="#893f3a"/>
+    </linearGradient>
+    <radialGradient id="ba2a-mouth" cx="50%" cy="55%" r="50%">
+      <stop offset="0%" stop-color="#3a1818"/>
+      <stop offset="100%" stop-color="#1a0808"/>
+    </radialGradient>
+    <linearGradient id="ba2a-gum" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#d27066"/>
+      <stop offset="100%" stop-color="#9a463e"/>
+    </linearGradient>
+    <linearGradient id="ba2a-veneer" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="50%" stop-color="#f8f4ec"/>
+      <stop offset="100%" stop-color="#e2d8c4"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="900" fill="url(#ba2a-bg)"/>
+  <ellipse cx="600" cy="450" rx="500" ry="280" fill="url(#ba2a-lip)"/>
+  <ellipse cx="600" cy="450" rx="460" ry="250" fill="url(#ba2a-mouth)"/>
+  <path d="M 200 320 Q 600 240 1000 320 L 1000 380 Q 600 320 200 380 Z" fill="url(#ba2a-gum)"/>
+  <path d="M 200 580 Q 600 660 1000 580 L 1000 540 Q 600 600 200 540 Z" fill="url(#ba2a-gum)"/>
+
+  <!-- 8 faccette ceramica frontali superiori (perfette, simmetriche) -->
+  <g id="ba2a-veneers">
+    <ellipse cx="305" cy="430" rx="32" ry="55" fill="url(#ba2a-veneer)"/>
+    <ellipse cx="380" cy="425" rx="34" ry="60" fill="url(#ba2a-veneer)"/>
+    <ellipse cx="455" cy="420" rx="36" ry="62" fill="url(#ba2a-veneer)"/>
+    <ellipse cx="535" cy="418" rx="38" ry="65" fill="url(#ba2a-veneer)"/>
+    <ellipse cx="618" cy="416" rx="40" ry="68" fill="url(#ba2a-veneer)"/>
+    <ellipse cx="700" cy="418" rx="38" ry="65" fill="url(#ba2a-veneer)"/>
+    <ellipse cx="780" cy="420" rx="36" ry="62" fill="url(#ba2a-veneer)"/>
+    <ellipse cx="855" cy="425" rx="34" ry="60" fill="url(#ba2a-veneer)"/>
+    <ellipse cx="925" cy="430" rx="32" ry="55" fill="url(#ba2a-veneer)"/>
+  </g>
+
+  <!-- Denti inferiori bianchi -->
+  <g>
+    <ellipse cx="340" cy="525" rx="28" ry="48" fill="url(#ba2a-veneer)"/>
+    <ellipse cx="400" cy="528" rx="30" ry="50" fill="url(#ba2a-veneer)"/>
+    <ellipse cx="460" cy="530" rx="30" ry="52" fill="url(#ba2a-veneer)"/>
+    <ellipse cx="520" cy="530" rx="32" ry="54" fill="url(#ba2a-veneer)"/>
+    <ellipse cx="585" cy="530" rx="32" ry="55" fill="url(#ba2a-veneer)"/>
+    <ellipse cx="650" cy="530" rx="32" ry="54" fill="url(#ba2a-veneer)"/>
+    <ellipse cx="715" cy="530" rx="30" ry="52" fill="url(#ba2a-veneer)"/>
+    <ellipse cx="775" cy="528" rx="30" ry="50" fill="url(#ba2a-veneer)"/>
+    <ellipse cx="835" cy="525" rx="28" ry="48" fill="url(#ba2a-veneer)"/>
+  </g>
+
+  <!-- Highlight intensi (caratteristica delle faccette ceramica) -->
+  <g opacity="0.7" fill="#ffffff">
+    <ellipse cx="305" cy="408" rx="9" ry="22"/>
+    <ellipse cx="380" cy="402" rx="11" ry="26"/>
+    <ellipse cx="455" cy="397" rx="12" ry="28"/>
+    <ellipse cx="535" cy="395" rx="13" ry="30"/>
+    <ellipse cx="618" cy="393" rx="14" ry="32"/>
+    <ellipse cx="700" cy="395" rx="13" ry="30"/>
+    <ellipse cx="780" cy="397" rx="12" ry="28"/>
+    <ellipse cx="855" cy="402" rx="11" ry="26"/>
+    <ellipse cx="925" cy="408" rx="9" ry="22"/>
+  </g>
+
+  <!-- Riflesso "ceramica" — banda lucente trasversale -->
+  <ellipse cx="600" cy="395" rx="280" ry="6" fill="#ffffff" opacity="0.5"/>
+
+  <g transform="translate(60, 60)">
+    <rect x="0" y="0" width="180" height="48" rx="24" fill="rgba(200, 168, 255, 0.9)"/>
+    <text x="90" y="32" font-family="'Manrope', sans-serif" font-weight="700" font-size="18" letter-spacing="0.2em" text-anchor="middle" fill="#261d26">DOPO</text>
+  </g>
+  <text x="60" y="850" font-family="'Manrope', sans-serif" font-weight="500" font-size="20" fill="#fff" opacity="0.9">8 faccette in ceramica integrale · 4 settimane</text>
+</svg>
