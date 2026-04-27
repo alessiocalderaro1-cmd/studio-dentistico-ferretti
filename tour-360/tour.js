@@ -10,7 +10,7 @@ document.body.className = `theme-${theme}`;
 
 // Back link torna alla variante corretta
 const backLink = document.getElementById('tour-back');
-backLink.href = theme === 'v1' ? '/v1-warm/' : '/v3-tech/';
+backLink.href = theme === 'v1' ? '/v1-warm/' : '/';
 
 // ── Rooms data ───────────────────────────────────────────────────
 const rooms = {

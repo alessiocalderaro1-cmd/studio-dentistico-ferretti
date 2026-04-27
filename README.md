@@ -1,17 +1,17 @@
-# Studio Dentistico Ferretti — 2 demo del portfolio
+# Studio Dentistico Ferretti — sito ufficiale + V1 preview
 
-Portfolio personale di **Alessio Calderaro**. Due interpretazioni visive radicalmente diverse dello stesso brief — uno studio dentistico ipotetico a Brescia con 10 persone, 8 servizi e compliance italiana — più un tour 360° condiviso.
+Portfolio personale di **Alessio Calderaro**. Sito di uno studio dentistico ipotetico a Brescia, con due interpretazioni visive disponibili come demo del portfolio.
 
-## Le 2 demo ufficiali
+## Demo
 
-| Demo | Mood | Skill base | URL |
+| Demo | URL | Mood | Skill base |
 |---|---|---|---|
-| **V1 — Studio Caldo** | warm-editorial · family-lifestyle · anti-clinico | `dentologie-design` | [/v1-warm/](v1-warm/index.html) |
-| **V3 — Studio del Futuro** | light-cool · tech-wellness · digital-first | `worldofnrg-design` + `prototypestudio-design` | [/v3-tech/](v3-tech/index.html) |
+| **Sito ufficiale** | `/` (root) | light-cool · tech-wellness · digital-first | `worldofnrg-design` + `prototypestudio-design` |
+| **Preview alternativa** | [/v1-warm/](v1-warm/index.html) | warm-editorial · family-lifestyle · anti-clinico | `dentologie-design` |
 
 Più: **Tour 360°** condiviso (Three.js + 4 panorami SVG mockup dental + 2 themes via `?theme=v1|v3`)
 
-La root del repo (`/`) reindirizza a V3 (demo principale). V1 resta accessibile via `/v1-warm/`.
+Per backward-compat: `/v3-tech/*` viene reindirizzato 301 alla root (il vecchio path della demo tech).
 
 ## Stack tecnico
 
@@ -19,43 +19,45 @@ La root del repo (`/`) reindirizza a V3 (demo principale). V1 resta accessibile 
 - Cloudflare Pages (deploy automatico via GitHub)
 - Bunny Fonts (GDPR-compliant)
 - Three.js v0.160 via CDN per il tour 360°
-- Lenis via CDN per smooth scroll (V3)
+- Lenis via CDN per smooth scroll
 - Zero framework, zero build, zero npm
 
 ## Struttura repo
 
 ```
-/                          → redirect a /v3-tech/ (Cloudflare Pages _redirects)
-/v1-warm/                  Demo 1 — 10 pagine HTML (Studio Caldo)
-/v3-tech/                  Demo 3 — 10 pagine HTML (Studio del Futuro)
-/tour-360/                 Tour virtuale Three.js (themes V1 + V3)
-/shared/                   Asset comuni (immagini, video, JS helpers, blog markdown)
+/                          ← Sito ufficiale (V3 promossa)
+├── index.html             Homepage
+├── style.css
+├── script.js
+├── logo.svg
+├── servizi.html           8 aree cliniche
+├── team.html              10 membri staff
+├── chi-siamo.html         Storia, valori, compliance
+├── prenotazione.html      Form prenotazione + calendar inline
+├── contatti.html          NAP + mappa + orari
+├── casi-clinici.html      8 casi prima/dopo con slider drag
+├── smile-design.html      Upload sorriso + preview canvas
+├── blog.html              Lista 4 articoli
+├── blog/                  4 articoli divulgativi
+├── _headers
+├── _redirects             Backward-compat /v3-tech/* → /
+├── shared/                Asset comuni (immagini, video, JS helpers)
+├── tour-360/              Tour virtuale Three.js (themes V1 + root)
+└── v1-warm/               Preview V1 (Studio Caldo) — 10 pagine HTML
 ```
 
-## Cosa contiene ogni demo
+## Cosa contiene il sito ufficiale (root)
 
-Ogni demo è un sito completo standalone con 10 pagine HTML:
-- `index.html` — homepage
-- `servizi.html` — 8 aree cliniche
-- `team.html` — 10 membri staff
-- `chi-siamo.html` / `chi-siamo.html` — storia, valori, compliance
-- `prenotazione.html` — form prenotazione
-- `contatti.html` — NAP + mappa + orari
-- `casi-clinici.html` — 8 casi prima/dopo con slider drag
-- `smile-design.html` — upload sorriso + preview canvas
-- `blog.html` + `blog/[4 articoli].html` — pubblicazioni educative
-
-Differenziatori condivisi tra V1 e V3:
-- Presentazione completa team (10 persone)
-- Casi clinici before/after con slider drag (16 SVG dental specifici)
-- Smile design upload con preview canvas
-- Tour 360° (su `/tour-360/?theme=v1` o `?theme=v3`)
+- Mesh gradient background mouse-reactive (lavender/cyan/mint blobs)
+- Hero con "Cura gentile. Risultati veri." weight-coded
+- Sezione servizi asymmetric Prototype-style con counter + parallax hover
+- Team completo con portrait desat→satura on hover
+- Casi clinici slider drag prima/dopo con 8 SVG dental specifici
+- Smile design upload con preview canvas client-side
+- Calendar inline mockup per prenotazione online (Cal.com style)
+- Tour 360° dello studio
+- Blog con 4 articoli divulgativi
 - Compliance IT (direttore sanitario, P.IVA, schema JSON-LD `Dentist`)
-
-V3 ha in più:
-- Mesh gradient background mouse-reactive (lavender/cyan blobs)
-- Calendar inline mockup per prenotazione online
-- Layout servizi asymmetric Prototype-style con counter + parallax hover
 
 ## Brief Studio Ferretti
 
@@ -71,12 +73,12 @@ V3 ha in più:
 python -m http.server 8000
 ```
 
-Apri `http://localhost:8000/v3-tech/` o `http://localhost:8000/v1-warm/`
+Apri `http://localhost:8000/` (sito ufficiale) o `http://localhost:8000/v1-warm/` (preview V1).
 
 ## Deploy
 
-Push su `design-exploration` → Cloudflare Pages preview build automatico.
-Merge su `master` → produzione.
+Branch `master` → produzione automatica su Cloudflare Pages.
+Branch `design-exploration` → preview deploy separato.
 
 ## Crediti foto/video
 
@@ -84,15 +86,14 @@ Merge su `master` → produzione.
 - Foto **servizi/tecnologie/blog hero/studio**: mix Unsplash + Picsum Photos placeholder
 - **Before/after** (16 file): SVG dental mockup originali
 - **Panorami 360°** (4 file): SVG mockup originali (illustrazioni stilizzate degli ambienti clinici)
-- **Video hero** (V1/V3 non lo usano più dopo cleanup): Pexels free
 
 ## Note
 
 Sito demo per portfolio personale. Studio Dentistico Ferretti è un'entità ipotetica — qualsiasi corrispondenza con studi reali è puramente casuale. P.IVA, numero albo, indirizzo sono placeholder.
 
-**Compliance italiana** rispettata in entrambe le demo: direttore sanitario nominativo, P.IVA, ordine, schema JSON-LD `Dentist`/`BlogPosting`. Nessun aggregatore esterno per recensioni — solo Google Reviews integrate native.
+**Compliance italiana** rispettata: direttore sanitario nominativo, P.IVA, ordine, schema JSON-LD `Dentist`/`BlogPosting`. Nessun aggregatore esterno per recensioni — solo Google Reviews integrate native.
 
-**WCAG 2.1 AA**: contrast minimo, focus ring visibile, `prefers-reduced-motion` rispettato in V1, V3 e tour 360°.
+**WCAG 2.1 AA**: contrast minimo, focus ring visibile, `prefers-reduced-motion` rispettato in entrambe le demo + tour 360°.
 
 —
 [Codice GitHub](https://github.com/alessiocalderaro1-cmd/studio-dentistico-ferretti)

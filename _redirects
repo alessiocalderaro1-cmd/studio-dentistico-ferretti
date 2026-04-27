@@ -1,3 +1,4 @@
-# Cloudflare Pages — root redirect a V3 (demo principale)
-# V1 resta accessibile via /v1-warm/
-/  /v3-tech/  302
+# Cloudflare Pages — backward-compat
+# V3 è stata promossa alla root del repo, ma vecchi link a /v3-tech/ devono restare validi
+/v3-tech/*  /:splat  301
+/v3-tech    /        301
